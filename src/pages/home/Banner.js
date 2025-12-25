@@ -54,7 +54,7 @@ function Banner() {
                       Oil <span>Refinery</span> <br /> Engineering Solutions
                     </h2>
 
-                    <div className="main-slider__call">
+                    {/* <div className="main-slider__call">
                       <div className="main-slider__call-icon">
                         <span className="icon-phone" />
                       </div>
@@ -64,7 +64,7 @@ function Banner() {
                           <Link to="tel:307555-0133">(307) 555-0133</Link>
                         </h5>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -96,7 +96,7 @@ function Banner() {
                       Crude Oil <span>Pipeline</span> <br /> Systems & Valves
                     </h2>
 
-                    <div className="main-slider__call">
+                    {/* <div className="main-slider__call">
                       <div className="main-slider__call-icon">
                         <span className="icon-phone" />
                       </div>
@@ -106,7 +106,7 @@ function Banner() {
                           <Link to="tel:307555-0133">(307) 555-0133</Link>
                         </h5>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -138,7 +138,7 @@ function Banner() {
                       Gas <span>Turbine</span> <br /> Power Generation Solutions
                     </h2>
 
-                    <div className="main-slider__call">
+                    {/* <div className="main-slider__call">
                       <div className="main-slider__call-icon">
                         <span className="icon-phone" />
                       </div>
@@ -148,14 +148,14 @@ function Banner() {
                           <Link to="tel:307555-0133">(307) 555-0133</Link>
                         </h5>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
             </div>
           </SwiperSlide>
         </Swiper>
-              
+
         <div className="swiper-pagination" id="main-slider-pagination" />
       </section>
     </>
