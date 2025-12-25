@@ -1,8 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import WhyChooseImg1 from "../../assets/images/resources/why-choose-one-img-1.jpg";
+import { BsCheckCircleFill } from "react-icons/bs";
+import ProcessOne from '../../components/HomeTwo/ProcessOne';
+
 
 const WhyChoose = () => {
+
+  const services = [
+    {
+      name: "Technological know-how",
+      active: false,
+    },
+    {
+      name: "Focused on assisting our clients with arriving at their objectives.",
+      active: true,
+    },
+    { 
+      name: "Strong grip on root cause analysis.",
+       active: false 
+      },
+    { 
+      name: "We are always trying to improve and adapt.", 
+      active: false 
+    },
+    {
+      name: "Guarantee the best worth is acquired.",
+      active: false,
+    },
+     {
+      name: "A one-stop solution for everything you need",
+      active: false,
+    },
+  ];
+ 
   return (
     <>
       {/* Why Choose One Start */}
@@ -17,19 +48,34 @@ const WhyChoose = () => {
                       Why Choose us
                     </span>
                   </div>
-                  <h2 className="section-title__title">
-                    Delivering excellence every a time Express Logistics
-                  </h2>
+                                                <h2 className="section-title__title">The Difference <br/>
+That Sets Us Apart
+</h2>
+
+                  
+              
                 </div>
-                <p className="why-choose-one__text">
-                  Construction is an essential industry that involves building
-                  adesigning the an structures such as buildings roads, bridges
-                  Construction is an essent industry that involves building
-                  adesigning the a structures such{" "}
-                </p>
+                
+                <div className="services-details__services-box">
+                                                {/* <h3 className="services-details__services-list-title">Reasons To Choose Us</h3> */}
+                                                <ul className="services-details__service-list list-unstyled">
+                                                    {services.map((service, index) => (
+                                                        <li key={index} className={service.active ? 'active' : ''}>
+                                                            <div className="icon">
+                                                                <span className="icon-dabble-arrow" />
+                                                            </div>
+                                                            <p>
+                                                                <Link to={service.link}>{service.name}</Link>
+                                                            </p>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+               
                 <div className="why-choose-one__btn-box">
                   <Link to="/about" className="thm-btn why-choose-one__btn">
-                    Read more
+                    
+Download Brochure
                     <span />
                   </Link>
                 </div>
@@ -43,24 +89,41 @@ const WhyChoose = () => {
                   data-wow-duration="2500ms"
                 >
                   <img src={WhyChooseImg1} alt="Why Choose Us" />
-                  <div className="why-choose-one__delivery-box">
-                    <div className="icon">
-                      <span className="icon-airplane" />
-                    </div>
-                    <p>
-                      2 DAYS
-                      <br /> DELIVERY
-                    </p>
-                  </div>
+                 
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </section>
-      {/* Why Choose One End */}
+
+      <section className="work-process">
+      <div className="container">
+          <ProcessOne />
+      </div>
+    </section>
+
+
+
     </>
   );
 };
 
-export default WhyChoose;
+export default WhyChoose
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
