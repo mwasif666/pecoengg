@@ -3,7 +3,7 @@ import AboutOne from "../../components/About/AboutOne";
 import aboutImage from "../../assets/images/shapes/about-one-shape-1.png";
 
 const aboutImg =
-  "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766453328/about3_ezt3jo.jpg";
+  "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766700442/Post-Images-6-1024x576_mvzkbp.png";
 
 const About = () => {
   return (
@@ -61,8 +61,8 @@ const About = () => {
           .about-one .about-one__img-1 img,
           .about-one .about-one__right img {
             width: 100% !important;
-            max-width: 620px !important;
-            height: 380px !important;
+           
+            height: 420px !important;
             object-fit: cover !important;
             border-radius: 28px !important;
             box-shadow: 0 20px 50px rgba(0,0,0,0.15) !important;
