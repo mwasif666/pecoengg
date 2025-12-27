@@ -243,16 +243,15 @@ ul {
   font-family: var(--onpoint-font-two);
 }
 
-.chooseus_li ul li{
+.chooseus_li ul li {
   list-style: none;
   line-height: 50px;
 }
 
-
-.choose-icon{
-  font-size: 22px;          /* ✅ check ka size */
-  flex-shrink: 0;           /* icon chota na ho */
-margin-right: 15px;
+.choose-icon {
+  font-size: 22px; /* ✅ check ka size */
+  flex-shrink: 0; /* icon chota na ho */
+  margin-right: 15px;
 }
 
 .section-title__title {
@@ -265,16 +264,16 @@ margin-right: 15px;
 }
 
 /* ===== WORK PROCESS SECTION ===== */
-.work-process{
+.work-process {
   /* padding: 110px 0; */
   background: #f7f7f7;
 }
 
-.work-process__head{
+.work-process__head {
   margin-bottom: 55px;
 }
 
-.work-process__tag{
+.work-process__tag {
   font-size: 12px;
   letter-spacing: 3px;
   font-weight: 700;
@@ -283,7 +282,7 @@ margin-right: 15px;
   margin-bottom: 10px;
 }
 
-.work-process__title{
+.work-process__title {
   font-size: 44px;
   line-height: 1.1;
   font-weight: 800;
@@ -291,53 +290,53 @@ margin-right: 15px;
   margin: 0;
 }
 
-@media (max-width: 991px){
-  .work-process__title{ font-size: 32px; }
+@media (max-width: 991px) {
+  .work-process__title {
+    font-size: 32px;
+  }
 }
 
 /* spacing like screenshot */
-.work-process__row{
+.work-process__row {
   margin-top: 70px;
   row-gap: 25px;
 }
 
 /* ===== CARD ===== */
-.process-card{
+.process-card {
   position: relative;
   background: #fff;
   border-radius: 14px;
   padding: 34px 36px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   min-height: 170px;
 }
 
-.process-card__num{
+.process-card__num {
   position: absolute;
   top: 18px;
   right: 22px;
   font-size: 46px;
   font-weight: 800;
-  color: rgba(0,0,0,0.10);
+  color: rgba(0, 0, 0, 0.1);
   line-height: 1;
 }
 
-.process-card__title{
+.process-card__title {
   font-size: 20px;
   font-weight: 800;
   color: #0b1b2a;
   margin: 0 0 18px 0;
 }
 
-.process-card__content{
+.process-card__content {
   display: flex;
   align-items: center;
   gap: 18px;
   height: 200px;
 }
 
-
-
-.process-card__text{
+.process-card__text {
   margin: 0;
   color: #6b7280;
   font-size: 15px;
@@ -347,12 +346,12 @@ margin-right: 15px;
 /* ===== Curved arrows (grey) between cards =====
    Only show on desktop like screenshot
 */
-@media (min-width: 992px){
+@media (min-width: 992px) {
   .process-card.is-arrow-left::before,
-  .process-card.is-arrow-right::after{
+  .process-card.is-arrow-right::after {
     content: "";
     position: absolute;
-    top: -78px;              /* lift above cards */
+    top: -78px; /* lift above cards */
     width: 190px;
     height: 80px;
     opacity: 0.65;
@@ -362,13 +361,13 @@ margin-right: 15px;
   }
 
   /* left arrow (01 -> 02) */
-  .process-card.is-arrow-left::before{
+  .process-card.is-arrow-left::before {
     left: -210px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='90' viewBox='0 0 220 90'%3E%3Cpath d='M10 75 C60 15, 160 15, 210 75' fill='none' stroke='%23bdbdbd' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M205 67 L212 75 L202 78' fill='none' stroke='%23bdbdbd' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   }
 
   /* right arrow (02 -> 03) */
-  .process-card.is-arrow-right::after{
+  .process-card.is-arrow-right::after {
     right: -210px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='90' viewBox='0 0 220 90'%3E%3Cpath d='M10 75 C60 15, 160 15, 210 75' fill='none' stroke='%23bdbdbd' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M205 67 L212 75 L202 78' fill='none' stroke='%23bdbdbd' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     transform: scaleX(-1); /* flip for right side */
@@ -2629,6 +2628,7 @@ a.scroll-to-target.scroll-to-top {
   display: block;
   padding: 120px 0 50px;
   z-index: 1;
+  margin-bottom: 70px;
 }
 
 .services-one .section-title {
@@ -2642,7 +2642,7 @@ a.scroll-to-target.scroll-to-top {
   border: 1px solid var(--onpoint-bdr-color);
   border-radius: 20px;
   padding: 69px 30px 39px;
-  margin-bottom: 70px;
+  height: 100%;
 }
 .services-carousel__single {
   position: relative;
@@ -2668,7 +2668,10 @@ a.scroll-to-target.scroll-to-top {
   transform: translateX(-50%);
   z-index: 1;
 }
-
+.services-one__icon svg {
+  font-size: 40px;
+  fill: #771f43;
+}
 .services-one__icon::before {
   position: absolute;
   top: 0;
@@ -2740,7 +2743,7 @@ a.scroll-to-target.scroll-to-top {
   position: relative;
   display: block;
   background-color: #f5f5f5;
-  padding:100px 0px;
+  padding: 100px 0px;
 }
 
 .why-choose-one__left {
@@ -2831,15 +2834,15 @@ a.scroll-to-target.scroll-to-top {
   font-family: var(--onpoint-font-two);
   color: var(--onpoint-white);
 }
-.process-one__icon-and-text{
+.process-one__icon-and-text {
   display: flex;
   align-items: flex-start;
   gap: 14px;
 }
 
-.process-one__icon-and-text .icon svg{
+.process-one__icon-and-text .icon svg {
   font-size: 42px;
-  color: #782145;   /* theme red */
+  color: #782145; /* theme red */
   flex-shrink: 0;
 }
 
@@ -5161,6 +5164,98 @@ select.selectmenu.wide {
   font-family: var(--onpoint-font-two);
 }
 
+/* Mansory */
+
+/* ===== Masonry Layout ===== */
+.masonry-portfolio {
+  column-count: 4;
+  column-gap: 18px;
+}
+
+@media (max-width: 1200px) {
+  .masonry-portfolio {
+    column-count: 3;
+  }
+}
+@media (max-width: 991px) {
+  .masonry-portfolio {
+    column-count: 2;
+  }
+}
+@media (max-width: 575px) {
+  .masonry-portfolio {
+    column-count: 1;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 18px;
+}
+
+/* ===== Card ===== */
+.masonry-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.masonry-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+/* subtle zoom on hover */
+.masonry-card:hover .masonry-img {
+  transform: scale(1.06);
+}
+
+/* ===== Hover Bottom Overlay Card ===== */
+.masonry-overlay {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  padding: 14px 14px 12px;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+
+  transform: translateY(18px);
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.masonry-card:hover .masonry-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.masonry-cat {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.85;
+  margin-bottom: 6px;
+}
+
+.masonry-title {
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0 0 6px;
+}
+
+.masonry-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.35;
+  opacity: 0.9;
+}
+
 /*--------------------------------------------------------------
 # Project Two
 --------------------------------------------------------------*/
@@ -5242,6 +5337,8 @@ select.selectmenu.wide {
   transform: scale(1.01);
   transition: transform 0.5s cubic-bezier(0.27, 0.48, 0.45, 0.94);
   transform-origin: 70% 80%;
+  height: 310px;
+  object-fit: cover;
 }
 
 .project-two__single:hover .project-two__img img {

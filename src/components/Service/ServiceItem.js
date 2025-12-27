@@ -1,24 +1,17 @@
-// src/components/ServiceItem.js
-import React from 'react';
-import { Link } from 'react-router-dom';
+// src/components/Service/ServiceItem.jsx
+import React from "react";
 
-const ServiceItem = ({ iconClass, title, link }) => (
-    <div className="services-one__single">
-        <div className="services-one__icon">
-            <span className={iconClass} />
-        </div>
-        <h3 className="services-one__title">
-            <Link to={link}>
-                {title}
-            </Link>
-        </h3>
-        <div className="services-one__btn-box">
-            <Link to={link} className="thm-btn services-one__btn">
-                Read more
-                <span />
-            </Link>
-        </div>
-    </div>
+const ServiceItem = ({ icon, title, description }) => (
+  <div className="services-one__single">
+    {/* ICON */}
+    <div className="services-one__icon">{icon}</div>
+
+    {/* TITLE */}
+    <h3 className="services-one__title">{title}</h3>
+
+    {/* DESCRIPTION */}
+    <p className="services-one__text line-clamp-2">{description}</p>
+  </div>
 );
 
 export default ServiceItem;
