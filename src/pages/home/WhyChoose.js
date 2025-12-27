@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import WhyChooseImg1 from "../../assets/images/resources/why-choose-one-img-1.jpg";
 import { BsCheckCircleFill } from "react-icons/bs";
 import ProcessOne from "../../components/HomeTwo/ProcessOne";
+import PDF from "../../assets/PDf/PECO-PROFILE-2021.pdf"
 
 const WhyChoose = () => {
   const services = [
@@ -53,26 +54,29 @@ const WhyChoose = () => {
                 </div>
 
                 <div className="services-details__services-box">
-                                                {/* <h3 className="services-details__services-list-title">Reasons To Choose Us</h3> */}
-                                                <ul className="services-details__service-list list-unstyled">
-                                                    {services.map((service, index) => (
-                                                        <li key={index} className={service.active ? 'active' : ''}>
-                                                            <div className="icon">
-                                                                <span className="icon-dabble-arrow" />
-                                                            </div>
-                                                            <p>
-                                                                <Link to={service.link}>{service.name}</Link>
-                                                            </p>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-               
+                  {/* <h3 className="services-details__services-list-title">Reasons To Choose Us</h3> */}
+                  <ul className="services-details__service-list list-unstyled">
+                    {services.map((service, index) => (
+                      <li
+                        key={index}
+                        className={service.active ? "active" : ""}
+                      >
+                        <div className="icon">
+                          <span className="icon-dabble-arrow" />
+                        </div>
+                        <p>
+                          <Link to={service.link}>{service.name}</Link>
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
                 <div className="why-choose-one__btn-box">
-                  <Link to="/about" className="thm-btn why-choose-one__btn">
+                  <a href={PDF} target="_blank" className="thm-btn why-choose-one__btn">
                     Download Brochure
                     <span />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

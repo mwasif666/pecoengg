@@ -1,6 +1,6 @@
 // Import the TestimonialCard component
 import TestimonialSlider1 from '../../components/slider/TestimonialSlider1';
-import testimonialoneimg from '../../assets/images/testimonial/testimonial-one-img-1.jpg';
+// import testimonialoneimg from '../../assets/images/testimonial/testimonial-one-img-1.jpg';
 
 
 const TestimonialsSection = () => {
@@ -14,7 +14,7 @@ const TestimonialsSection = () => {
             <div className="testimonial-one__inner">
               <div className="testimonial-one__img-one">
                 <img
-                  src={testimonialoneimg}
+                  src={"https://res.cloudinary.com/dndfzn6h3/image/upload/v1766852360/testimoinal_u3lfbs.png"}
                   alt=""
                 />
               </div>

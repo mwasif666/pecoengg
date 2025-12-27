@@ -6,25 +6,25 @@ import processShapeImage from "../../assets/images/shapes/process-one-shape-1.pn
 const VisionMission = () => {
   const processOneData = {
     tagline: "",
-    title: "Our Commitment & Our Future Plan",
+    title: "Our Vision & Our Mission",
     processes: [
       {
         shapeImage: processShapeImage,
-        title: "Our Commitment",
+        title: "Our Vision",
         description:
           "Our future is based on consistent advancement; however, our everyday tasks wouldn't be imaginable without our employees' commitment to direct business with strong integrity and incredible skill. We strongly believe that a service providing company is identified by their dedication and commitment. We feel proud to state that Progressive Engineering Company in their 16 years business history has never fallback with our pledge to any single client.",
       },
       {
         shapeImage: processShapeImage,
-        title: "Our Future Plan",
+        title: "Our Mission",
         description:
-          "Introduce Innovative technology and products to Pakistan Industrial sector. To set-up state-of-the-art Rotary workshop in Collaboration with our foreign Principal and technology transfer. Provide products/services for power conservation projects. To provide asset management techniques and create network among Pakistan’s industries to sale/purchase surplus assets within Pakistan.",
+          "Our mission is to deliver high-quality and cost-effective industrial process products while ensuring excellent customer satisfaction through continuous training and ongoing quality improvement. We strive to set new trends in development by supporting industry professionals in advancing their expertise. At the same time, we actively explore global markets to identify innovative solutions that can be introduced locally, helping enhance production efficiency and improve the quality of final products.",
       },
     ],
   };
 
   return (
-    <section className="process-one">
+    <section className="process-one vision">
       <div className="container">
         {/* Heading */}
         <div className="section-title text-center">
@@ -48,7 +48,7 @@ const VisionMission = () => {
               className="col-xl-6 col-lg-6 wow fadeInUp"
               data-wow-delay={`${100 * (index + 1)}ms`}
             >
-              <div className="process-one__single">
+              <div className="process-one__single1">
                 {/* Number */}
                 <div className="process-one__count">
                   {/* {String(index + 1).padStart(2, "0")} */}

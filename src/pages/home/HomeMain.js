@@ -24,13 +24,13 @@ const HomeMain = () => {
       <About />
       <PrincipalsMasonry />
       <VisionMission />
-      <Features />
+      {/* <Features /> */}
       <Brand />
-      <Team />
+      {/* <Team /> */}
       <WhyareweSec />
       <FAQsection />
       <TestimonialsSection />
-      <Blog />
+      {/* <Blog /> */}
     </React.Fragment>
   );
 };

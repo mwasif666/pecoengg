@@ -53,7 +53,9 @@ const Footer = ({
                                 <div className="footer-widget__column footer-widget__about">
                                     <div className="footer-widget__logo">
                                         <Link to="/">
-                                            <img src={footerLogo} alt="Logo" />
+                                            <img src="https://res.cloudinary.com/dndfzn6h3/image/upload/v1766005609/cae169ed-9dd2-4c60-a7ac-38744ce5a48f.png" style={{
+                                             
+                                            }} alt="Logo" />
                                         </Link>
                                     </div>
                                     <p className="footer-widget__about-text">

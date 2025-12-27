@@ -7,13 +7,11 @@ const Brand = ( ) => {
     return (
         <>
             {/*Brand One Start*/}
-            <section className="brand-one">
+            <section className="brand-one slider-sec">
               <div className="container">
-                <p className="brand-one__text count-box">
-                  Join the{" "}
-                  <CounterUp end={150} />
-                  <span>+</span> companies trusting maxline company
-                </p>
+                <h1 className="slider-heading">
+                  Trusted By
+                </h1>
                 <BrandSlider1/>
               </div>
             </section>

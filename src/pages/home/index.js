@@ -31,16 +31,7 @@ const Home = () => {
             <Header />
             <HomeMain />
             
-            {/*cta-section */}
-            <CtaSection
-            className="cta-one" // Custom class name
-            breadcrumbsImg={bannerbg}
-            shapeImageUrl={shapeImageUrl}
-            title="Need any help? contact us!"
-            text="Need help?"
-            phoneNumber="(307) 555-0133"
-            />
-            {/*cta-section end */}
+         
             <BackToTop scroll={isVisible} />
             <Footer />
         </React.Fragment>

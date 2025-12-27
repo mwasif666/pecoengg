@@ -1,51 +1,39 @@
-import React from 'react';
-import WhyAreWe from '../../components/About/WhyAreWe';
-import image1 from '../../assets/images/resources/why-are-we-img-1.jpg';
-import image2 from '../../assets/images/resources/why-are-we-img-2.jpg';
+import React from "react";
+import WhyAreWe from "../../components/About/WhyAreWe";
 
+const WhyAreWeSec = () => {
+  const points = [
+    {
+      number: "50+",
+      heading: "Reputed Clients",
+      text: "We are proud to have worked with over 50+ well-known clients from various industries.",
+      arrowIcon: "icon-arrow-down-left", // agar aapke layout me arrows use hote hain
+    },
+    {
+      number: "20+",
+      heading: "Different Industries",
+      text: "We have the expertise to work with clients from over 20+ different industries.",
+      arrowIcon: "icon-arrow-down-right",
+    },
+    {
+      number: "15+",
+      heading: "Years of Experience",
+      text: "We bring 15+ years of experience delivering reliable solutions with proven client trust.",
+      arrowIcon: "", // last me arrow optional
+    },
+  ];
 
-
-
-const WhyAreWeSec = ( ) => {
-    const points = [
-        {
-            iconClass: 'why-are-we__icon',
-            arrowIcon: 'icon-arrow-down-left',
-            icon: 'icon-location why-are-we__location',
-            heading: 'Real Time tracking',
-            text: 'Logistic service involves the implementation and control'
-        },
-        {
-            iconClass: 'why-are-we__icon-2',
-            arrowIcon: 'icon-arrow-down-right',
-            icon: 'icon-shopping-cart why-are-we__cart',
-            heading: 'On time delivery',
-            text: 'Logistic service involves the implementation and control'
-        },
-        {
-            iconClass: '',
-            arrowIcon: '',
-            icon: 'icon-call why-are-we__call',
-            heading: '24/7 online support',
-            text: 'Logistic service involves the implementation and control'
-        }
-    ];
-    return (
-        
-        <>
-        <WhyAreWe
-            imageSrc1={image1}
-            imageSrc2={image2}
-            tagline="Why are we best"
-            title="Efficiency at its best with our logistics services"
-            points={points}
-            year="Since 1920"
-            yearDescription="Logistic service involves the planning, implementation, and control of the efficient and effective movement and storage"
-        />
-        </>
-
-
-    );
-}
+  return (
+    <WhyAreWe
+      imageSrc1="https://res.cloudinary.com/dndfzn6h3/image/upload/v1766774495/GTC_i4mxjd.png"
+      imageSrc2="https://res.cloudinary.com/dndfzn6h3/image/upload/v1766849686/young-engineer-adjusting-autonomous-heating-min-scaled-rf7u6yuhll77mdn1dxyi3fuqoiowpgu65kvs1gwj8w_joo26e.jpg"
+      tagline="WHAT WE DO"
+      title="WE ARE THE BEST AT WHAT WE DO."
+      points={points}
+      year="Since 2006"
+      yearDescription="Delivering high-quality and cost-effective solutions with a strong focus on customer satisfaction, training, and continuous improvement."
+    />
+  );
+};
 
 export default WhyAreWeSec;

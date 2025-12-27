@@ -63,7 +63,7 @@ export default function TestimonialSlider1() {
                         <span className="icon-quote" />
                     </div>
                     <div className="testimonial-one__client-img">
-                        <img src={testimonialImg1} alt="Testimonial from Nafiz Bhuiyan" />
+                        {/* <img src={testimonialImg1} alt="Testimonial from Pervaiz Rizvi" /> */}
                     </div>
                     <div className="testimonial-one__ratting">
                         <span className="icon-star" />
@@ -73,13 +73,13 @@ export default function TestimonialSlider1() {
                         <span className="icon-star last-star" />
                     </div>
                     <h3 className="testimonial-one__client-name">
-                        Nafiz Bhuiyan
+                        Pervaiz Rizvi
                     </h3>
                     <p className="testimonial-one__client-sub-title">
-                        Manager
+                        Process Consultant, ENAR Petroleum Refining Facility (EPRF)
                     </p>
                     <p className="testimonial-one__text">
-                        Logistic service involves the planning implementation and control of the efficient and effective movement and storage of goods and materials.
+                        I know Progressive Engineering Company for many years and found them very responsive, technically sound, and reliable partners in Refinery’s equipment supplies. We also have good experience working with their principals like Sulzer pumps, Sulzer Chemtech and GTC Technologies.
                     </p>
                 </div>
             </SwiperSlide>
@@ -89,7 +89,7 @@ export default function TestimonialSlider1() {
                         <span className="icon-quote" />
                     </div>
                     <div className="testimonial-one__client-img">
-                        <img src={testimonialImg2} alt="Testimonial from Robert Son" />
+                        {/* <img src={testimonialImg2} alt="Testimonial from Fahad Ejaz" /> */}
                     </div>
                     <div className="testimonial-one__ratting">
                         <span className="icon-star" />
@@ -99,68 +99,17 @@ export default function TestimonialSlider1() {
                         <span className="icon-star last-star" />
                     </div>
                     <h3 className="testimonial-one__client-name">
-                        Robert Son
+                        Fahad Ejaz
                     </h3>
                     <p className="testimonial-one__client-sub-title">
-                        Manager
+                        Dalda Foods Ltd.
                     </p>
                     <p className="testimonial-one__text">
-                        Logistic service involves the planning implementation and control of the efficient and effective movement and storage of goods and materials.
+                        I know Progressive Engineering Company from the days I had been working for National Refinery, SIAD Compressor supplied by them in NRL and Dalda Foods are reliable machines, also Sulzer pumps supplied to NRL are also robust pumps.
                     </p>
                 </div>
             </SwiperSlide>
-            <SwiperSlide className="swiper-slide">
-                <div className="testimonial-one__single">
-                    <div className="testimonial-one__quote">
-                        <span className="icon-quote" />
-                    </div>
-                    <div className="testimonial-one__client-img">
-                        <img src={testimonialImg3} alt="Testimonial from Harbert Spin" />
-                    </div>
-                    <div className="testimonial-one__ratting">
-                        <span className="icon-star" />
-                        <span className="icon-star" />
-                        <span className="icon-star" />
-                        <span className="icon-star" />
-                        <span className="icon-star last-star" />
-                    </div>
-                    <h3 className="testimonial-one__client-name">
-                        Harbert Spin
-                    </h3>
-                    <p className="testimonial-one__client-sub-title">
-                        Manager
-                    </p>
-                    <p className="testimonial-one__text">
-                        Logistic service involves the planning implementation and control of the efficient and effective movement and storage of goods and materials.
-                    </p>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide">
-                <div className="testimonial-one__single">
-                    <div className="testimonial-one__quote">
-                        <span className="icon-quote" />
-                    </div>
-                    <div className="testimonial-one__client-img">
-                        <img src={testimonialImg4} alt="Testimonial from Mainto Vula" />
-                    </div>
-                    <div className="testimonial-one__ratting">
-                        <span className="icon-star" />
-                        <span className="icon-star" />
-                        <span className="icon-star" />
-                        <span className="icon-star" />
-                        <span className="icon-star last-star" />
-                    </div>
-                    <h3 className="testimonial-one__client-name">
-                        Mainto Vula
-                    </h3>
-                    <p className="testimonial-one__client-sub-title">
-                        Manager
-                    </p>
-                    <p className="testimonial-one__text">
-                        Logistic service involves the planning implementation and control of the efficient and effective movement and storage of goods and materials.
-                    </p>
-                </div>
-            </SwiperSlide>
+          
         </Swiper>
     );
 }

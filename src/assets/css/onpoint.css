@@ -2156,7 +2156,17 @@ a.scroll-to-target.scroll-to-top {
   -ms-transition-delay: 1500ms;
   -o-transition-delay: 1500ms;
 }
-
+.slider-heading{
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+  text-transform: uppercase;
+  margin: 50px 0px;
+}
+.slider-sec{
+  margin: 100px 0px;
+}
 .main-slider__text {
   font-size: 18px;
   color: rgba(var(--onpoint-white-rgb), 1);
@@ -2859,46 +2869,92 @@ a.scroll-to-target.scroll-to-top {
 /*--------------------------------------------------------------
 # Brand One
 --------------------------------------------------------------*/
-.brand-one {
-  position: relative;
-  display: block;
-  padding: 0 0 120px;
-  z-index: 1;
-}
-
-.brand-one .container {
-  max-width: 1350px;
-}
-
-.brand-one__text {
-  font-family: var(--onpoint-font-two);
-  text-align: center;
-  color: var(--onpoint-black);
-  margin-bottom: 50px;
-}
-
-.brand-one .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.brandMarquee {
+  overflow: hidden;
+  white-space: nowrap;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  margin-bottom: 0px;
+}
+
+.brandTrack {
+  display: flex;
+}
+
+.brandItem {
+  display: inline-block;
+  padding: 0 0px;
+  height: 100%;
+}
+
+.brandItem img {
+  width: 300px;
+  max-width: 300px;
+  height: 200px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+  border: 1px solid lightgray;
+  object-fit: contain;
+  padding: 0px 80px;
+}
+
+.brandsSection .col1 {
+  border: 1px solid lightgray;
+  height: 200px;
+  width: 300px;
   justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-right: 0 !important;
+}
+.clientTitle {
+  color: #828282;
+  font-size: 2rem;
+}
+.brandsSection .col3 {
+  padding: 0 !important;
 }
 
-.brand-one .swiper-slide img {
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  max-width: 100%;
-  opacity: 1;
+.brandItem img:hover {
+  filter: grayscale(0%);
 }
 
-.brand-one .swiper-slide img:hover {
-  opacity: 0.5;
+/* Left-moving row */
+.marqueeLeft .brandTrack {
+  animation: scrollLeft 70s linear infinite;
 }
+
+/* Right-moving row */
+.marqueeRight .brandTrack {
+  animation: scrollRight 70s linear infinite;
+}
+
+/* Keyframes */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 769px) {
+  .brandItem img {
+    width: 200px;
+    max-width: 200px;
+    height: 150px;
+    padding: 0px 30px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # About One
@@ -3528,6 +3584,7 @@ a.scroll-to-target.scroll-to-top {
   display: block;
   padding: 0 0 120px;
   z-index: 1;
+margin-top: 130px;
 }
 
 .why-are-we__left {
@@ -3675,8 +3732,11 @@ a.scroll-to-target.scroll-to-top {
 }
 
 .why-are-we__img-2 img {
-  width: 100%;
-  border-radius: 20px;
+    width: 100%;
+    border-radius: 20px;
+    height: 600px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .why-are-we__year {
@@ -3965,8 +4025,9 @@ select.selectmenu.wide {
 .testimonial-one {
   position: relative;
   display: block;
-  padding: 120px 0 0;
+  /* padding: 120px 0 0; */
   z-index: 1;
+  margin: 100px 0px;
 }
 
 .testimonial-one__inner {
@@ -5162,6 +5223,86 @@ select.selectmenu.wide {
   transition-delay: 0.1s;
   color: rgba(var(--onpoint-black-rgb), 0.1);
   font-family: var(--onpoint-font-two);
+}
+/* vision */
+.vision{
+  background-color: rgb(255, 255, 255);
+  padding:50px 0px 0px 0px ;
+}
+.process-one__single1 {
+  position: relative;
+  display: block;
+  /* background-color: var(--onpoint-white); */
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 37px 30px 27px;
+  margin-bottom: 30px;
+  height: 300px;
+}
+
+/* slider */
+.wrapper {
+  background: #fff;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+/* second row line */
+.sliderBottom {
+  border-top: 1px solid #d9d9d9;
+}
+
+/* swiper */
+.slider,
+.sliderBottom {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Important: slide width fixed so grid cells repeat */
+.slide {
+  width: 300px !important; /* ✅ fixed cell width */
+}
+
+/* cell box */
+.cell {
+  width: 300px;
+  height: 200px;
+  border-left: 1px solid #d9d9d9; /* ✅ vertical separators */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* logo style */
+.logo {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  /* filter: grayscale(100%); */
+  /* opacity: 0.75; */
+  transition: 0.25s ease;
+}
+
+.logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* ✅ responsive */
+@media (max-width: 769px) {
+  .slide {
+    width: 220px !important;
+  }
+  .cell {
+    width: 220px;
+    height: 150px;
+  }
+  .logo {
+    width: 75%;
+    height: 75%;
+  }
 }
 
 /* Mansory */

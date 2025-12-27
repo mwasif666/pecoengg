@@ -9,26 +9,26 @@ const MenuItems = (props) => {
       <li>
         <Link to="/">Home</Link>
       </li>
-      <li className={parentMenu === "about" ? "current-menu-item" : ""}>
+      <li className={parentMenu === "#" ? "current-menu-item" : ""}>
         <Link
-          to="/about"
-          className={activeMenu === "/about" ? "active-menu" : ""}
+          to="/#"
+          className={activeMenu === "/#" ? "active-menu" : ""}
         >
           About
         </Link>
       </li>
 
       <li>
-        <Link to="/services">Services</Link>
+        <Link to="/#">Services</Link>
       </li>
       <li>
-        <Link to="/project">Projects</Link>
+        <Link to="/#">Projects</Link>
       </li>
 
-      <li className={parentMenu === "contact" ? "current-menu-item" : ""}>
+      <li className={parentMenu === "#" ? "current-menu-item" : ""}>
         <Link
-          to="/contact"
-          className={activeMenu === "/contact" ? "active-menu" : ""}
+          to="/#"
+          className={activeMenu === "/#" ? "active-menu" : ""}
         >
           Contact
         </Link>

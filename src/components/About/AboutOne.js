@@ -6,6 +6,7 @@ import aboutImage from '../../assets/images/shapes/about-one-shape-1.png';
 import aboutImg1 from '../../assets/images/resources/about-one-img-1.jpg';
 import aboutImg2 from '../../assets/images/resources/about-one-img-2.jpg';
 
+
 const AboutOne = ({
     className = "about-one about-two",
     tagline = "About Us",

@@ -4,6 +4,7 @@ import MenuItems from "./MenuItems";
 import MobileMenu from "./MobileMenu";
 import SearchPopup from "./SearchPopup";
 import Sidebar from "./Sidebar";
+import Pdf from "../../../assets/PDf/PECO-PROFILE-2021.pdf"
 
 const Header = (props) => {
   const { parentMenu, secondParentMenu, activeMenu } = props;
@@ -88,10 +89,10 @@ const Header = (props) => {
                   <div className="main-menu__right d-flex justify-content-lg-end justify-content-center mt-3 mt-md-0">
                     <div className="main-menu__search-nav-sidebar-btn-box">
                       <div className="main-menu__btn-box">
-                        <Link to="/about" className="thm-btn main-menu__btn">
-                          Read more
-                          <span />
-                        </Link>
+                       <a href={Pdf} target="_blank" className="thm-btn main-menu__btn">
+                            Download Brochure
+                            <span />
+                          </a>
                       </div>
                     </div>
                   </div>
@@ -151,10 +152,10 @@ const Header = (props) => {
                     <div className="main-menu__right d-flex justify-content-lg-end justify-content-center mt-3 mt-md-0">
                       <div className="main-menu__search-nav-sidebar-btn-box">
                         <div className="main-menu__btn-box">
-                          <Link to="/about" className="thm-btn main-menu__btn">
-                            Read more
+                          <a href={Pdf} target="_blank" className="thm-btn main-menu__btn">
+                            Download Brochure
                             <span />
-                          </Link>
+                          </a>
                         </div>
                       </div>
                     </div>
