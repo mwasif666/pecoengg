@@ -41,7 +41,7 @@ const ServicesOne = () => {
 
           <div className="row">
             {services.map((service, index) => (
-              <div key={index} className="col-xl-4 col-lg-4">
+              <div key={index} className="col-xl-4 col-lg-4 mb-5">
                 <ServiceItem
                   icon={service.icon}
                   title={service.title}

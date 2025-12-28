@@ -47,7 +47,7 @@ const Project = () => {
       id: 6,
       image:
         "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766699052/Air_-_AF_eowcn6.webp",
-      title: "Flare & Piping Systems",
+      title: "Flare Systems",
       link: "/project-details",
     },
 

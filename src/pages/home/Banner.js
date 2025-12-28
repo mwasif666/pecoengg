@@ -19,6 +19,10 @@ const swiperOptions = {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
 };
 
 function Banner() {

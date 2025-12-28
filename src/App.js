@@ -6,7 +6,6 @@ import Testimonials from "./pages/testimonials";
 import Faq from "./pages/faq";
 import NoPage from "./pages/NoPage";
 import About from "./pages/about";
-import Services from "./pages/services";
 import ServicesCarousel from "./pages/services-carousel";
 import Solutions from "./pages/express-freight-solutions";
 import Logistics from "./pages/quick-move-logistics";
@@ -21,7 +20,7 @@ import Project from "./pages/project";
 import BlogDetails from "./pages/blog-details";
 import Blog from "./pages/blog";
 import Contact from "./pages/contact";
-
+import Principals from "./pages/principals";
 
 export default function App() {
   return (
@@ -42,9 +41,9 @@ export default function App() {
         <Route path="testimonials" element={<Testimonials />} />
         <Route path="team" element={<Team />} />
         <Route path="team-details" element={<TeamDetails />} />
-        <Route path="services" element={<Services />} />
+        <Route path="principals" element={<Principals />} />
         <Route path="project-details" element={<ProjectDetails />} />
-        <Route path="project" element={<Project />} />
+        <Route path="product-portfolio" element={<Project />} />
         <Route path="blog-details" element={<BlogDetails />} />
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />

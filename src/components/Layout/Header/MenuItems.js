@@ -10,24 +10,21 @@ const MenuItems = (props) => {
         <Link to="/">Home</Link>
       </li>
       <li className={parentMenu === "#" ? "current-menu-item" : ""}>
-        <Link
-          to="/#"
-          className={activeMenu === "/#" ? "active-menu" : ""}
-        >
+        <Link to="/about" className={activeMenu === "/#" ? "active-menu" : ""}>
           About
         </Link>
       </li>
 
       <li>
-        <Link to="/#">Services</Link>
+        <Link to="/principals">OUR PRINCIPALS</Link>
       </li>
       <li>
-        <Link to="/#">Projects</Link>
+        <Link to="/product-portfolio">Product Portfolio</Link>
       </li>
 
       <li className={parentMenu === "#" ? "current-menu-item" : ""}>
         <Link
-          to="/#"
+          to="/contact"
           className={activeMenu === "/#" ? "active-menu" : ""}
         >
           Contact

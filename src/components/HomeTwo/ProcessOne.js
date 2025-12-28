@@ -12,13 +12,13 @@ const ProcessOne = () => {
         shapeImage: processShapeImage,
         title: "Our Commitment",
         description:
-          "Our future is based on consistent advancement; however, our everyday tasks wouldn't be imaginable without our employees' commitment to direct business with strong integrity and incredible skill. We strongly believe that a service providing company is identified by their dedication and commitment. We feel proud to state that Progressive Engineering Company in their 16 years business history has never fallback with our pledge to any single client.",
+          "Our future is built on continuous progress, but our daily operations are driven by the dedication, integrity, and expertise of our people. We believe a service-oriented company is defined by commitment. Proudly, Progressive Engineering Company has consistently honored every promise throughout sixteen years of trusted business relationships.",
       },
       {
         shapeImage: processShapeImage,
         title: "Our Future Plan",
         description:
-          "Introduce Innovative technology and products to Pakistan Industrial sector. To set-up state-of-the-art Rotary workshop in Collaboration with our foreign Principal and technology transfer. Provide products/services for power conservation projects. To provide asset management techniques and create network among Pakistan’s industries to sale/purchase surplus assets within Pakistan.",
+          "Our future plan focuses on introducing innovative technologies to Pakistan’s industrial sector, establishing a state-of-the-art rotary workshop with international principals, enabling technology transfer, supporting power conservation initiatives, & developing asset management networks that allow industries to efficiently trade surplus assets within Pakistan.",
       },
     ],
   };
@@ -29,7 +29,9 @@ const ProcessOne = () => {
         {/* Heading */}
         <div className="section-title text-center">
           <div className="section-title__tagline-box">
-            <span className="section-title__tagline">{processOneData.tagline}</span>
+            <span className="section-title__tagline">
+              {processOneData.tagline}
+            </span>
           </div>
 
           <h2

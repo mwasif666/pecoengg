@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import WhyChooseImg1 from "../../assets/images/resources/why-choose-one-img-1.jpg";
 import { BsCheckCircleFill } from "react-icons/bs";
 import ProcessOne from "../../components/HomeTwo/ProcessOne";
-import PDF from "../../assets/PDf/PECO-PROFILE-2021.pdf"
+import PDF from "../../assets/PDf/PECO-PROFILE-2021.pdf";
 
 const WhyChoose = () => {
   const services = [
@@ -57,10 +57,7 @@ const WhyChoose = () => {
                   {/* <h3 className="services-details__services-list-title">Reasons To Choose Us</h3> */}
                   <ul className="services-details__service-list list-unstyled">
                     {services.map((service, index) => (
-                      <li
-                        key={index}
-                        className={service.active ? "active" : ""}
-                      >
+                      <li key={index}>
                         <div className="icon">
                           <span className="icon-dabble-arrow" />
                         </div>
@@ -73,7 +70,11 @@ const WhyChoose = () => {
                 </div>
 
                 <div className="why-choose-one__btn-box">
-                  <a href={PDF} target="_blank" className="thm-btn why-choose-one__btn">
+                  <a
+                    href={PDF}
+                    target="_blank"
+                    className="thm-btn why-choose-one__btn"
+                  >
                     Download Brochure
                     <span />
                   </a>

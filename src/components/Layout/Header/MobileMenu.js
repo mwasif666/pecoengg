@@ -71,13 +71,13 @@ const MobileMenu = ({ handleMobileMenu }) => {
                 </li>
 
                 <li>
-                  <Link to="/services" onClick={handleMobileMenu}>
-                    Services
+                  <Link to="/principals" onClick={handleMobileMenu}>
+                    Our Principals
                   </Link>
                 </li>
                 <li>
-                  <Link to="/project" onClick={handleMobileMenu}>
-                    Projects
+                  <Link to="/product-portfolio" onClick={handleMobileMenu}>
+                    Product Portfolio
                   </Link>
                 </li>
 
