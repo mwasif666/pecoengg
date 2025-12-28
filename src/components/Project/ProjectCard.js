@@ -44,9 +44,7 @@ const ProjectCard = ({ projects = [], sectionClassName }) => {
                       <p className="project-two__sub-title">
                         {project.category}
                       </p>
-                      <h3 className="project-two__title">
-                        <Link to={project.link}>{project.title}</Link>
-                      </h3>
+                      <h3 className="project-two__title">{project.title}</h3>
                     </div>
                   </div>
                 )}

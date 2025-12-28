@@ -14,56 +14,48 @@ const ProjectMain = () => {
       image:
         "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766698363/img-627x405_PumpComparison_pmlku1.png",
       title: "Centrifugal & Reciprocating Pumps",
-      link: "/project-details",
     },
     {
       id: 3,
       image:
         "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766697606/ct_6_1_liquid_distributor_1920x1280_kvn1nj.jpg",
       title: "Column Internals, Trays & Packing",
-      link: "/project-details",
     },
     {
       id: 4,
       image:
         "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766697607/reciprocating-compressor_kaagnn.jpg",
       title: "Reciprocating Compressors",
-      link: "/project-details",
     },
     {
       id: 5,
       image:
         "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766697607/ProcessBurners-HP-Stock-scaled_a6ljm9.webp",
       title: "Process Burners & Heating",
-      link: "/project-details",
     },
     {
       id: 6,
       image:
         "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766699052/Air_-_AF_eowcn6.webp",
       title: "Flare Systems",
-      link: "/project-details",
     },
     {
       id: 6,
       image:
         "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766956481/project6_biq5jt.png",
       title: "Electrical Heaters & Heat Tracing",
-      link: "/project-details",
     },
     {
       id: 7,
       image:
         "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766957482/project7_ra35nx.png",
       title: "Valves, Pipe Fittings & Flanges",
-      link: "/project-details",
     },
     {
       id: 6,
       image:
         "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766957698/project8_dthqwz.png",
       title: "Studs, Bolts & Gaskets.",
-      link: "/project-details",
     },
     // Add more project data here as needed
   ];

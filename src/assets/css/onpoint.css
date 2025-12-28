@@ -1932,6 +1932,27 @@ a.scroll-to-target.scroll-to-top {
   color: var(--onpoint-white);
 }
 
+/* Loader */
+/* Fullscreen route loader */
+.route-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(2px);
+}
+
+/* AntD spinner color override */
+.route-loader .ant-spin-dot-item {
+  background-color: #771f43 !important;
+}
+
+.route-loader .ant-spin-dot {
+  font-size: 42px; /* optional: makes dot a bit bigger */
+}
+
 /*--------------------------------------------------------------
 # Main Slider
 --------------------------------------------------------------*/
@@ -9831,6 +9852,11 @@ select.selectmenu.wide {
 }
 
 @media (max-width: 767px) {
+  .project-two__content,
+  .masonry-overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
   .main-menu__right {
     display: none;
   }

@@ -1,5 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import RouteChangeLoader from "./components/RouteChangeLoader";
+
 import Home from "./pages/home";
 import HomeTwo from "./pages/home-2";
 import Testimonials from "./pages/testimonials";
@@ -21,10 +24,17 @@ import BlogDetails from "./pages/blog-details";
 import Blog from "./pages/blog";
 import Contact from "./pages/contact";
 import Principals from "./pages/principals";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <BrowserRouter>
+      {/* 1) scroll to top on every navigation */}
+      <ScrollToTop />
+
+      {/* 2) loader on route change */}
+      <RouteChangeLoader />
+
       <Routes>
         <Route index element={<Home />} />
         <Route path="*" element={<NoPage />} />
