@@ -90,7 +90,7 @@ const About = () => {
 
       {/* ===== ABOUT SECTION ===== */}
       <AboutOne
-        className="about-one"
+        className="about-one mt-5 pt-5"
         tagline="About Us"
         title="Progressive Engineering Company (PECO)"
         description="Progressive Engineering Company (PECO), established in 2006 in Karachi, serves Pakistan’s Oil, Gas, Petrochemical, Refineries, Power Generation, Water and General Engineering sectors. PECO is a trusted supplier of Mass Transfer Components, Bulk Piping Material, Valves, Hoses, and Accessories, and also provides Engineering & Feasibility Studies, Process Design Packages, and Detailed Engineering."

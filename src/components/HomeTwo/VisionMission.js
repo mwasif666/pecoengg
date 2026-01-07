@@ -24,7 +24,13 @@ const VisionMission = () => {
   };
 
   return (
-    <section className="process-one vision">
+    <section
+      className="process-one vision"
+      style={{
+        backgroundColor: "#f5f5f5",
+        paddingBottom: "80px",
+      }}
+    >
       <div className="container">
         {/* Heading */}
         <div className="section-title text-center">

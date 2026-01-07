@@ -15,17 +15,17 @@ const HomeMain = () => {
   return (
     <React.Fragment>
       <Banner />
-      <ServicesOne />
-      <WhyChoose />
-      <Project />
       <About />
-      <PrincipalsMasonry />
       <VisionMission />
+      {/* <ServicesOne /> */}
+      <WhyChoose />
+      {/* <Project /> */}
+      <PrincipalsMasonry />
       {/* <Features /> */}
       <Brand />
       {/* <Team /> */}
       <WhyareweSec />
-      <FAQsection />
+
       <TestimonialsSection />
       {/* <Blog /> */}
     </React.Fragment>

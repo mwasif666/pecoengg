@@ -1,0 +1,226 @@
+/* ===============================
+   HEADER OVER BANNER (GLASS + WHITE ON SCROLL UP)
+================================ */
+
+.econ-overlay-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 9999;
+
+  pointer-events: none;
+  transform: translateY(0);
+  transition: transform 320ms ease;
+  will-change: transform;
+}
+
+.econ-overlay-header.hidden {
+  transform: translateY(-110%);
+}
+
+/* NAV base */
+.econ-nav {
+  pointer-events: auto;
+  padding: 22px 0;
+  transition: background 260ms ease, padding 260ms ease, box-shadow 260ms ease,
+    border-color 260ms ease;
+}
+
+/* Layout */
+.econ-row {
+  display: grid;
+  grid-template-columns: 240px 1fr 260px;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Logo */
+.econ-logo img {
+  width: 90px;
+  height: auto;
+  display: block;
+}
+
+/* ===============================
+   THEME 1: GLASS (Default over banner)
+================================ */
+.econ-overlay-header.theme-glass .econ-nav {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* little stronger on scroll */
+.econ-overlay-header.theme-glass.scrolled .econ-nav {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 14px 0;
+}
+
+/* pill glass */
+.econ-overlay-header.theme-glass .econ-menu-pill {
+}
+
+.econ-overlay-header.theme-glass .econ-menu-pill li a {
+  color: #fff !important;
+}
+
+.econ-overlay-header.theme-glass .econ-cta {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.econ-overlay-header.theme-glass .econ-cta-ic {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* ===============================
+   THEME 2: WHITE (On scroll UP like Econetix)
+   Glass OFF, Text BLACK
+================================ */
+.econ-overlay-header.theme-light .econ-nav {
+  background: #ffffff;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom: 1px solid rgba(2, 6, 23, 0.1);
+  box-shadow: 0 10px 25px rgba(2, 6, 23, 0.08);
+  padding: 14px 0;
+}
+
+/* pill becomes light */
+.econ-overlay-header.theme-light .econ-menu-pill {
+  background: rgba(2, 6, 23, 0.03);
+  border: 1px solid rgba(2, 6, 23, 0.1);
+  box-shadow: none;
+}
+
+.econ-overlay-header.theme-light .econ-menu-pill li a {
+  color: #0b1220 !important;
+}
+
+.econ-overlay-header.theme-light .econ-menu-pill li a:hover {
+  background: rgba(2, 6, 23, 0.06);
+}
+
+/* CTA white style (Econetix-ish) */
+.econ-overlay-header.theme-light .econ-cta {
+  color: #0b1220;
+  background: #ffffff;
+  border: 1px solid rgba(2, 6, 23, 0.14);
+  box-shadow: 0 10px 22px rgba(2, 6, 23, 0.1);
+  backdrop-filter: none;
+}
+
+.econ-overlay-header.theme-light .econ-cta-ic {
+  background: #7d2147; /* green icon bubble (change if needed) */
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.econ-cta-ic .cls-1 {
+  fill: #ffffff !important;
+}
+
+/* ===============================
+   COMMON (pill / links / CTA)
+================================ */
+.econ-menu-pill {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 20px 14px;
+  border-radius: 999px;
+}
+
+.econ-menu-pill ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.econ-menu-pill li a {
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.econ-menu-pill li a:hover {
+  transform: translateY(-1px);
+}
+
+/* CTA */
+.econ-cta {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 18px 10px 10px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.econ-cta:hover {
+  transform: translateY(-1px);
+}
+
+.econ-cta-ic {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.econ-cta-txt {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Mobile button */
+.econ-mobile-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Make mobile btn adapt to theme */
+.econ-overlay-header.theme-glass .econ-mobile-btn {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.econ-overlay-header.theme-glass .econ-mobile-btn i {
+  color: #fff;
+}
+
+.econ-overlay-header.theme-light .econ-mobile-btn {
+  background: rgba(2, 6, 23, 0.04);
+  border: 1px solid rgba(2, 6, 23, 0.1);
+}
+.econ-overlay-header.theme-light .econ-mobile-btn i {
+  color: #0b1220;
+}
+
+/* MOBILE */
+@media (max-width: 991px) {
+  .econ-row {
+    grid-template-columns: 1fr auto;
+  }
+  .econ-menu-pill {
+    margin-left: auto;
+  }
+  .reposnive-cta {
+    display: none;
+  }
+}

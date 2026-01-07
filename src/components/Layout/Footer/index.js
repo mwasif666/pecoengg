@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // Import default images
 import FooterShape1 from "../../../assets/images/shapes/footer-shape-1.png";
 import footerLogo1 from "../../../assets/images/resources/footer-logo-1.png";
+import FAQsection from "../../../pages/home/FAQsection";
 
 const Footer = ({
   footerLogo = footerLogo1,
@@ -22,15 +23,14 @@ const Footer = ({
     },
     {
       icon: "icon-call phone-call",
-      text: "+92 304 2343554",
-      link: "tel:+923042343554",
+      text: "0092 213 525 0176",
+      link: "tel:00922135250176",
     },
   ],
   companyLinks = [
     { text: "About Us", link: "/about" },
     { text: "Product Portfolio", link: "/project" },
-    { text: "Service", link: "/services" },
-    { text: "Blog And News", link: "/blog" },
+    { text: "Contact Us", link: "/contact" },
   ],
 
   newsletterUrl = "MC_FORM_URL",
@@ -46,26 +46,6 @@ const Footer = ({
           <div className="container">
             <div className="site-footer__top-inner">
               <div className="row">
-                <div
-                  className="col-xl-5 col-lg-6 col-md-6 wow fadeInUp"
-                  data-wow-delay="100ms"
-                >
-                  <div className="footer-widget__column footer-widget__about">
-                    <div className="footer-widget__logo">
-                      <Link to="/">
-                        <img
-                          src="https://res.cloudinary.com/dndfzn6h3/image/upload/v1766005609/cae169ed-9dd2-4c60-a7ac-38744ce5a48f.png"
-                          width="150"
-                          alt="Logo"
-                          style={{
-                            filter: "brightness(0) invert(1)",
-                          }}
-                        />
-                      </Link>
-                    </div>
-                    <p className="footer-widget__about-text">{aboutText}</p>
-                  </div>
-                </div>
                 <div
                   className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
                   data-wow-delay="200ms"
@@ -83,7 +63,6 @@ const Footer = ({
                     </ul>
                   </div>
                 </div>
-
                 <div
                   className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
                   data-wow-delay="400ms"
@@ -110,6 +89,9 @@ const Footer = ({
                     </ul>
                     <div className="mc-form__response" />
                   </div>
+                </div>
+                <div className="col-xl-5 col-lg-5 col-md-12">
+                  <FAQsection />
                 </div>
               </div>
             </div>

@@ -36,7 +36,12 @@ const WhyChoose = () => {
   return (
     <>
       {/* Why Choose One Start */}
-      <section className="why-choose-one">
+      <section
+        className="why-choose-one"
+        style={{
+          backgroundColor: "white",
+        }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-xl-6 col-lg-6">
@@ -96,7 +101,7 @@ const WhyChoose = () => {
         </div>
       </section>
 
-      <section className="work-process">
+      <section className="work-process pt-5">
         <div className="container">
           <ProcessOne />
         </div>

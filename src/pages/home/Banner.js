@@ -19,10 +19,10 @@ const swiperOptions = {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
 };
 
 function Banner() {
@@ -57,18 +57,6 @@ function Banner() {
                     <h2 className="main-slider__title">
                       Oil <span>Refinery</span> <br /> Engineering Solutions
                     </h2>
-
-                    {/* <div className="main-slider__call">
-                      <div className="main-slider__call-icon">
-                        <span className="icon-phone" />
-                      </div>
-                      <div className="main-slider__call-number">
-                        <p>Need help?</p>
-                        <h5>
-                          <Link to="tel:307555-0133">(307) 555-0133</Link>
-                        </h5>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -99,18 +87,6 @@ function Banner() {
                     <h2 className="main-slider__title">
                       Crude Oil <span>Pipeline</span> <br /> Systems & Valves
                     </h2>
-
-                    {/* <div className="main-slider__call">
-                      <div className="main-slider__call-icon">
-                        <span className="icon-phone" />
-                      </div>
-                      <div className="main-slider__call-number">
-                        <p>Need help?</p>
-                        <h5>
-                          <Link to="tel:307555-0133">(307) 555-0133</Link>
-                        </h5>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -141,18 +117,6 @@ function Banner() {
                     <h2 className="main-slider__title">
                       Gas <span>Turbine</span> <br /> Power Generation Solutions
                     </h2>
-
-                    {/* <div className="main-slider__call">
-                      <div className="main-slider__call-icon">
-                        <span className="icon-phone" />
-                      </div>
-                      <div className="main-slider__call-number">
-                        <p>Need help?</p>
-                        <h5>
-                          <Link to="tel:307555-0133">(307) 555-0133</Link>
-                        </h5>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </div>

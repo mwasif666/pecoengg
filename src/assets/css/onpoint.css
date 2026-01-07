@@ -1960,8 +1960,7 @@ a.scroll-to-target.scroll-to-top {
   position: relative;
   display: block;
   background-color: var(--onpoint-black);
-  margin: 0 45px;
-  border-radius: 50px;
+  border-radius: 0px;
   z-index: 91;
   overflow: hidden;
 }
@@ -3791,7 +3790,7 @@ h2.section-title__title.mx_with {
 .faq-one {
   position: relative;
   display: block;
-  padding: 80px 0 0;
+  padding: 0px 0 0;
   z-index: 1;
 }
 
@@ -3921,7 +3920,7 @@ h2.section-title__title.mx_with {
   display: block;
   background-color: var(--onpoint-base);
   border-radius: 20px;
-  padding: 58px 40px 60px;
+  padding: 0px 40px 60px;
 }
 
 .faq-one__from-title {
@@ -4517,7 +4516,7 @@ select.selectmenu.wide {
 .site-footer {
   position: relative;
   display: block;
-  background-color: var(--onpoint-black);
+  background-color: #771f43;
   margin-top: -124px;
   z-index: 1;
 }
@@ -4615,7 +4614,7 @@ select.selectmenu.wide {
 }
 
 .footer-widget__about-contact li p > a:hover {
-  color: var(--onpoint-base);
+  color: white;
 }
 
 .footer-widget__about-contact li:hover .phone-call {
@@ -4674,7 +4673,7 @@ select.selectmenu.wide {
 }
 
 .footer-widget__company-list li > a:hover {
-  color: var(--onpoint-base);
+  color: white;
 }
 
 .footer-widget__services {
@@ -5385,8 +5384,8 @@ select.selectmenu.wide {
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(6px);
 
-  transform: translateY(18px);
-  opacity: 0;
+  transform: translateY(0px);
+  opacity: 1;
   transition: all 0.35s ease;
 }
 
@@ -6212,9 +6211,10 @@ select.selectmenu.wide {
   position: relative;
   display: block;
   padding: 141px 0 151px;
-  margin: 0 30px 0;
+  margin: 0;
   overflow: hidden;
   z-index: 1;
+  height: 70vh;
 }
 
 .page-header__bg {
@@ -6223,7 +6223,6 @@ select.selectmenu.wide {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 50px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -6242,12 +6241,12 @@ select.selectmenu.wide {
     rgba(0, 0, 0, 0.87) 24.4%,
     rgba(102, 102, 102, 0) 100%
   );
-  border-radius: 50px;
 }
 
 .page-header__inner {
   position: relative;
   display: block;
+  top: 140px;
 }
 
 .page-header__inner h2 {
@@ -9883,4 +9882,12 @@ select.selectmenu.wide {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1470px) {
+}
+/* Custom css */
+.main-slider .row {
+  height: 60vh;
+  align-items: center;
+}
+.main-slider .swiper-slide {
+  height: 100vh;
 }

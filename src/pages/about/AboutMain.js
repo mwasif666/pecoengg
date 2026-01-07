@@ -62,13 +62,12 @@ const AboutMain = () => {
         <About />
       </div>
       <VisionMission />
-      <WhyAreWeSec />
       <WhyChoose />
-
-      <TestimonialsSection />
       <div className="mb-5 pb-5">
         <Brand />
       </div>
+      <WhyAreWeSec />
+      <TestimonialsSection />
     </React.Fragment>
   );
 };

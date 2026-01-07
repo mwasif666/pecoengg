@@ -98,7 +98,7 @@ const PrincipalsMasonry = () => {
       style={{
         paddingTop: "80px",
         paddingBottom: "80px",
-        backgroundColor: "#f5f5f5",
+        backgroundColor: "white",
       }}
     >
       <div className="container">

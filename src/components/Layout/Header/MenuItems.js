@@ -18,9 +18,9 @@ const MenuItems = (props) => {
       <li>
         <Link to="/principals">OUR PRINCIPALS</Link>
       </li>
-      <li>
+      {/* <li>
         <Link to="/product-portfolio">Product Portfolio</Link>
-      </li>
+      </li> */}
 
       <li className={parentMenu === "#" ? "current-menu-item" : ""}>
         <Link
