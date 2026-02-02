@@ -1,9 +1,5 @@
 import React from "react";
 import ProjectCard from "../../components/Project/ProjectCard";
-import projectImg2 from "../../assets/images/project/project-2-2.jpg";
-import projectImg3 from "../../assets/images/project/project-2-3.jpg";
-import projectImg4 from "../../assets/images/project/project-2-4.jpg";
-import projectImg5 from "../../assets/images/project/project-2-5.jpg";
 
 const Project = () => {
   // Example data

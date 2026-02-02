@@ -4,7 +4,6 @@ import Header from "../../components/Layout/Header";
 import navImg1 from "../../assets/images/resources/logo-1.png";
 import Footer from "../../components/Layout/Footer";
 import SiteBreadcrumb from "../../components/Common/Breadcumb";
-import bannerbg from "../../assets/images/backgrounds/page-header-bg.jpg";
 import AboutMain from "./AboutMain";
 
 // Breadcrumbs Background Image

@@ -1,37 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
-const faqData = [
-  {
-    key: 1,
-    question: "What is PECO and when was it established?",
-    answer:
-      "Progressive Engineering Company (PECO) was established in 2006 in Karachi to cater to the needs of Pakistan’s Oil and Petrochemical industry. Since then, PECO has built a strong market reputation as a trusted supplier and engineering services provider.",
-  },
-  {
-    key: 2,
-    question: "Which industries does PECO serve?",
-    answer:
-      "PECO supports a wide range of sectors including Oil & Gas, Petrochemical, Refineries, Power Generation, Water, General Engineering, and Fertilizer industries across Pakistan.",
-  },
-  {
-    key: 3,
-    question: "What products does PECO supply?",
-    answer:
-      "PECO supplies Mass Transfer Components, Bulk Piping Materials, Valves, Hoses, and related Accessories. The company also stocks a wide range of spares and equipment to meet client requirements.",
-  },
-];
 
 function FAQsection() {
-  const [isActive, setIsActive] = useState({ status: false, key: 1 });
-
-  const handleToggle = (key) => {
-    if (isActive.key === key) {
-      setIsActive({ status: false, key: null });
-    } else {
-      setIsActive({ status: true, key });
-    }
-  };
-
   return (
     <section className="faq-one">
       <div className="container">

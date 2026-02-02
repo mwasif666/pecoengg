@@ -1,10 +1,6 @@
 import React from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import testimonialImg1 from "../../assets/images/testimonial/testimonial-1-1.jpg";
-import testimonialImg2 from "../../assets/images/testimonial/testimonial-1-2.jpg";
-import testimonialImg3 from "../../assets/images/testimonial/testimonial-1-3.jpg";
-import testimonialImg4 from "../../assets/images/testimonial/testimonial-1-4.jpg";
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],

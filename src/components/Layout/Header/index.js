@@ -4,7 +4,6 @@ import MenuItems from "./MenuItems";
 import MobileMenu from "./MobileMenu";
 import SearchPopup from "./SearchPopup";
 import Sidebar from "./Sidebar";
-import Pdf from "../../../assets/PDf/PECO-PROFILE-2021.pdf";
 
 import "./header-glass.css";
 
@@ -20,12 +19,10 @@ const Header = (props) => {
   const lastY = useRef(0);
   const ticking = useRef(false);
 
-  const [isMobileMenu, setMobileMenu] = useState(false);
   const [isPopup, setIsPopup] = useState(false);
   const [isSidebar, setIsSidebar] = useState(false);
 
   const handleMobileMenu = () => {
-    setMobileMenu((v) => !v);
     document.body.classList.toggle("mobile-menu-visible");
   };
 

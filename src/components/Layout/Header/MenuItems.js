@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const MenuItems = (props) => {
-  const { parentMenu, secondParentMenu, activeMenu } = props;
+  const { parentMenu, activeMenu } = props;
 
   return (
     <React.Fragment>

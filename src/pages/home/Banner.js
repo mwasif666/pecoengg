@@ -1,5 +1,4 @@
 // import Swiper core and required modules
-import { Link } from "react-router-dom";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 

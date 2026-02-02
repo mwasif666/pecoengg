@@ -1,30 +1,6 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import logo from "../../../assets/images/resources/footer-logo-1.png";
 
 const MobileMenu = ({ handleMobileMenu }) => {
-  const [isActive, setIsActive] = useState({
-    status: false,
-    key: "",
-    subMenuKey: "",
-  });
-
-  const handleToggle = (key, subMenuKey = "") => {
-    if (isActive.key === key && isActive.subMenuKey === subMenuKey) {
-      setIsActive({
-        status: false,
-        key: "",
-        subMenuKey: "",
-      });
-    } else {
-      setIsActive({
-        status: true,
-        key,
-        subMenuKey,
-      });
-    }
-  };
-
   return (
     <>
       <div className="mobile-nav__wrapper">

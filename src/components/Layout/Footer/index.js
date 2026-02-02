@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Import default images
-import FooterShape1 from "../../../assets/images/shapes/footer-shape-1.png";
 import footerLogo1 from "../../../assets/images/resources/footer-logo-1.png";
 import FAQsection from "../../../pages/home/FAQsection";
 
@@ -104,6 +103,7 @@ const Footer = ({
               <p className="site-footer__bottom-text">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   className="text-white"
                   href="https://innovationpixel.com"
                 >

@@ -1,6 +1,5 @@
 import React from "react";
 import BrandSlider1 from "../../components/slider/BrandSlider1";
-import CounterUp from "react-countup"; // Make sure you have this installed
 
 const Brand = () => {
   return (

@@ -1,8 +1,4 @@
 import React from "react";
-import CtaSection from "../../components/Common/CtaSection";
-import bannerbg from "../../assets/images/resources/cta-one-bg-img.jpg";
-import shapeImageUrl from "../../assets/images/shapes/cta-one-shape-1.png";
-import ContactMainImg from "../../assets/images/resources/contact-two-img-1.jpg";
 
 const ContactMain = () => {
   return (

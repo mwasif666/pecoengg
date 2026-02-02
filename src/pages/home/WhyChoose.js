@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import WhyChooseImg1 from "../../assets/images/resources/why-choose-one-img-1.jpg";
-import { BsCheckCircleFill } from "react-icons/bs";
 import ProcessOne from "../../components/HomeTwo/ProcessOne";
 import PDF from "../../assets/PDf/PECO-PROFILE-2021.pdf";
 
@@ -78,6 +77,7 @@ const WhyChoose = () => {
                   <a
                     href={PDF}
                     target="_blank"
+                    rel="noreferrer"
                     className="thm-btn why-choose-one__btn"
                   >
                     Download Brochure
