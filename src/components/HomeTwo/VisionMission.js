@@ -12,7 +12,7 @@ const VisionMission = () => {
         shapeImage: processShapeImage,
         title: "Our Vision",
         description:
-          "Our future is based on consistent advancement; however, our everyday tasks wouldn't be imaginable without our employees' commitment to direct business with strong integrity and incredible skill. We strongly believe that a service providing company is identified by their dedication and commitment. We feel proud to state that Progressive Engineering Company in their 16 years business history has never fallback with our pledge to any single client.",
+          "Our future is based on consistent advancement; however, our everyday tasks wouldn’t be imaginable without our employees’ commitment to direct business with strong integrity and incredible skill. We strongly believe that a service-providing company is identified by its dedication and commitment. We feel proud to state that Progressive Engineering Company, in its 20-year business history, has never fallen back on its pledge to any client.",
       },
       {
         shapeImage: processShapeImage,

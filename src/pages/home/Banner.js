@@ -55,7 +55,8 @@ function Banner() {
                     </div>
 
                     <h2 className="main-slider__title">
-                      Oil <span>Refinery</span> <br /> Engineering Solutions
+                      Process <span>Industries</span> <br /> Engineering
+                      Solutions
                     </h2>
                   </div>
                 </div>
@@ -85,7 +86,7 @@ function Banner() {
                     </div>
 
                     <h2 className="main-slider__title">
-                      Crude Oil <span>Pipeline</span> <br /> Systems & Valves
+                      <span>Pipeline</span> <br /> Systems & Valves
                     </h2>
                   </div>
                 </div>
@@ -115,7 +116,8 @@ function Banner() {
                     </div>
 
                     <h2 className="main-slider__title">
-                      Gas <span>Turbine</span> <br /> Power Generation Solutions
+                      Turbo <span>Machinery</span> <br /> Power Generation
+                      Solutions
                     </h2>
                   </div>
                 </div>
