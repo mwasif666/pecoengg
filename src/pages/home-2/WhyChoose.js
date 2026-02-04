@@ -4,7 +4,7 @@ import whyChooseBg from '../../assets/images/backgrounds/why-choose-two-bg.jpg';
 
 const whyChooseData = {
     backgroundImage: whyChooseBg,
-    phone: '01959701730',
+    phone: '0092 21 35250761',
     title: (
         <>
             Delivering excellence <br />

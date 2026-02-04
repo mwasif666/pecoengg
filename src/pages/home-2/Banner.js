@@ -7,7 +7,7 @@ import banneroneshape from '../../assets/images/shapes/banner-one-shape-1.png';
 const Banner = () => {
     const bannerData = {
         subTitle: "Best Cargo",
-        contactNumber: "(307) 555-0133",
+        contactNumber: "0092 21 35250761",
         image1: banneroneimg,
         image2: bannerTwoimg,
         readMoreLink: "/about",

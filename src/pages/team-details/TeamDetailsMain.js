@@ -9,7 +9,7 @@ const TeamDetailsMain = () => {
     department: "Web Design",
     experience: "15 Years",
     email: "bondorhelp@gmail.com",
-    phone: "+1-900-938-4957-43",
+    phone: "0092 21 35250761",
     image: infoImg,
     biography: `
       A vast majority of the app marketers mainly concentrate on the post-launch 

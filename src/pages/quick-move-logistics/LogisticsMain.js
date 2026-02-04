@@ -10,7 +10,7 @@ const LogisticsMain = () => {
     name: "Sakib al hasan",
     title: "Brand Ambassador",
     text: "Construction is an essential industry that the building and designing...",
-    phone: "+888123456765",
+    phone: "0092 21 35250761",
     socials: [
       { icon: "icon-instagram", link: "/blog-details" },
       { icon: "icon-facebook-f", link: "/blog-details" },
@@ -44,7 +44,7 @@ const LogisticsMain = () => {
     title: "GET TOUCH",
     subTitle: "For fast service",
     icon: "icon-call",
-    phone: "+888123456765",
+    phone: "0092 21 35250761",
   };
 
   const details = {

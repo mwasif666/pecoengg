@@ -76,11 +76,11 @@ const MobileMenu = ({ handleMobileMenu }) => {
             </li>
             <li>
               <i className="fa fa-phone-alt"></i>
-              <Link to="tel:+923042343554">+92 304 234 3554</Link>
+              <Link to="tel:00922135250761">0092 21 35250761</Link>
             </li>
             <li>
               <i className="fa fa-phone-alt"></i>
-              <Link to="tel:+9233232369094">+92 33 236 9094</Link>
+              <Link to="tel:00922135250761">0092 21 35250761</Link>
             </li>
           </ul>
           {/* <div className="mobile-nav__top">

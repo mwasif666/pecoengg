@@ -71,7 +71,7 @@ const HeaderStyleTwo = ({ parentMenu, secondParentMenu, activeMenu }) => {
                                             <div className="main-menu-two__call-number">
                                                 <p>Need help?</p>
                                                 <h5>
-                                                    <Link to="tel:307555-0133">(307) 555-0133</Link>
+                                                    <Link to="tel:00922135250761">0092 21 35250761</Link>
                                                 </h5>
                                             </div>
                                         </div>
@@ -121,7 +121,7 @@ const HeaderStyleTwo = ({ parentMenu, secondParentMenu, activeMenu }) => {
                                                 <div className="main-menu-two__call-number">
                                                     <p>Need help?</p>
                                                     <h5>
-                                                        <Link to="tel:307555-0133">(307) 555-0133</Link>
+                                                        <Link to="tel:00922135250761">0092 21 35250761</Link>
                                                     </h5>
                                                 </div>
                                             </div>

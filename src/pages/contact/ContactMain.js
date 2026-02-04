@@ -21,10 +21,10 @@ const ContactMain = () => {
                 <div className="content">
                   <h3>Lets Talk us</h3>
                   <p>
-                    <a href="tel:+923042343554">+92 304 2343554</a>
+                    <a href="tel:00922135250761">0092 21 35250761</a>
                   </p>
                   <p>
-                    <a href="tel:+923332369094">+92 333 2369094</a>
+                    <a href="tel:00922135250761">0092 21 35250761</a>
                   </p>
                 </div>
               </li>
@@ -35,8 +35,8 @@ const ContactMain = () => {
                 <div className="content">
                   <h3>Address</h3>
                   <p>
-                    Head Office 10-C 3rd Floor
-                    <br /> Khayaban-e-Bukhari, Phase 6 DHA
+                    17-C, 1st Floor, Khayaban e Muslim,
+                    <br /> Cinepex Cinema Road, DHA Phase 06, Karachi
                   </p>
                 </div>
               </li>
@@ -64,7 +64,7 @@ const ContactMain = () => {
       </section>
       {/*Contact One End*/}
       {/*Contact Two Start*/}
-      <section className="contact-two">
+      <section className="contact-two mb-5">
         <div className="container">
           <div className="row">
             <div className="col-xl-7">
@@ -151,17 +151,6 @@ const ContactMain = () => {
         </div>
       </section>
       {/*Contact Two End*/}
-      {/*Google Map Start*/}
-      <section className="google-map-one google-map-two">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.37719910949625!2d67.06300762761704!3d24.79424866166014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ceeb8266663%3A0xb5b6274e1b3ae31d!2s10%20Khayaban-e-Bukhari%2C%20Bukhari%20Commercial%20Area%20Phase%206%20Defence%20Housing%20Authority%2C%20Karachi%2C%2075500%2C%20Pakistan!5e0!3m2!1sen!2s!4v1766958905469!5m2!1sen!2s"
-          className="google-map__one"
-          allowFullScreen=""
-          title="Google Map showing Costco Wholesale location"
-        />
-      </section>
-
-      {/*Google Map End*/}
     </React.Fragment>
   );
 };

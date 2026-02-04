@@ -31,8 +31,8 @@ const PrincipalsMasonry = () => {
       image:
         "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766774495/GTC_i4mxjd.png",
       category: "Our Principals",
-      title: "Sulzer GTC",
-      description: "Gas treatment & process expertise",
+      title: "Made S.A",
+      description: "Trusted partner in quality manufacturing",
     },
     {
       id: 5,
@@ -79,8 +79,8 @@ const PrincipalsMasonry = () => {
       image:
         "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766774494/Euro_nulvzo.png",
       category: "Our Principals",
-      title: "Euro Gas System",
-      description: "Gas systems & safety solutions",
+      title: "The Paralloy Group",
+      description: "Engineered alloy solutions for critical industries",
     },
     {
       id: 11,

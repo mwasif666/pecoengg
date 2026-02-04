@@ -18,12 +18,12 @@ const Footer = ({
     },
     {
       icon: "icon-location location-icon",
-      text: "10-C 3rd Floor Khayaban-e-Bukhari",
+      text: "17-C, 1st Floor, Khayaban e Muslim, Cinepex Cinema Road, DHA Phase 06, Karachi",
     },
     {
       icon: "icon-call phone-call",
-      text: "0092 213 525 0176",
-      link: "tel:00922135250176",
+      text: "0092 21 35250761",
+      link: "tel:00922135250761",
     },
   ],
   companyLinks = [

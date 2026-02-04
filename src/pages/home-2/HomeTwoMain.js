@@ -7,7 +7,6 @@ import Process from './Process'
 import ProjectTwo from './ProjectTwo';
 import Testimonial from './Testimonial';
 import Blog from './Blog';
-import GoogleMap from './GoogleMap';
 
 
 const HomeTwoMain = () => {
@@ -21,7 +20,6 @@ const HomeTwoMain = () => {
 			<ProjectTwo />
 			<Testimonial />
 			<Blog />
-			<GoogleMap />
 		</>
 	);
 }

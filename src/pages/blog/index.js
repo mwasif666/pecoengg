@@ -52,7 +52,7 @@ const Blog = () => {
             shapeImageUrl={shapeImageUrl}
             title="Need any help? contact us!"
             text="Need help?"
-            phoneNumber="(307) 555-0133"
+            phoneNumber="0092 21 35250761"
             />
             {/*cta-section end */}
             <BackToTop scroll={isVisible} />

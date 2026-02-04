@@ -12,8 +12,8 @@ const ProjectDetailsMain = () => {
         startDate: '1 March 2024',
         endDate: '28 September 2025',
         rating: 5,
-        address: 'Dhaka 102, 8000 Sent Behaibior, Road 45, House of Street',
-        phone: '+32566 - 800 - 890',
+        address: '17-C, 1st Floor, Khayaban e Muslim, Cinepex Cinema Road, DHA Phase 06, Karachi',
+        phone: '0092 21 35250761',
         fax: '1234 - 58963 - 007',
         email: 'nafiz1223@gmail.com',
         socialLinks: [

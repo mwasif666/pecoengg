@@ -26,7 +26,7 @@ import BrandSliderImg18 from "../../assets/images/brand/brand-1-18.png";
 import BrandSliderImg19 from "../../assets/images/brand/brand-1-19.png";
 import BrandSliderImg20 from "../../assets/images/brand/brand-1-20.png";
 import BrandSliderImg21 from "../../assets/images/brand/brand-1-21.png";
-
+import BrandSliderImg22 from "../../assets/images/brand/sui.jpg";
 
 const brands = [
   BrandSliderImg1,
@@ -50,6 +50,7 @@ const brands = [
   BrandSliderImg19,
   BrandSliderImg20,
   BrandSliderImg21,
+  BrandSliderImg22,
 ];
 
 const base = {

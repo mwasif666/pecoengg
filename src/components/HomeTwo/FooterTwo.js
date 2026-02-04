@@ -20,8 +20,8 @@ const footerData = {
     ],
     contactInfo: [
         { icon: "envolop email-icon", text: "debra.holt@example.com", link: "mailto:debra.holt@example.com" },
-        { icon: "location location-icon", text: "3891 Ranchview Dr. Richardson" },
-        { icon: "call phone-call", text: "01245789321, 012457895146", link: "tel:01245789321" }
+        { icon: "location location-icon", text: "17-C, 1st Floor, Khayaban e Muslim, Cinepex Cinema Road, DHA Phase 06, Karachi" },
+        { icon: "call phone-call", text: "0092 21 35250761", link: "tel:00922135250761" }
     ],
     bottomMenu: [
         { text: "Trams & Condition", link: "/about" },
