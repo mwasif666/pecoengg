@@ -17,6 +17,16 @@ const Footer = ({
       link: "mailto:project@pecoengg.com",
     },
     {
+      icon: "icon-envolop email-icon",
+      text: "syedali@pecoengg.com",
+      link: "mailto:syedali@pecoengg.com",
+    },
+    {
+      icon: "icon-envolop email-icon",
+      text: "muzamil@pecoengg.com",
+      link: "mailto:muzamil@pecoengg.com",
+    },
+    {
       icon: "icon-location location-icon",
       text: "17-C, 1st Floor, Khayaban e Muslim, Cinepex Cinema Road, DHA Phase 06, Karachi",
     },
@@ -25,11 +35,18 @@ const Footer = ({
       text: "0092 21 35250761",
       link: "tel:00922135250761",
     },
+    {
+      icon: "icon-call phone-call",
+      text: "+92 333 2369094",
+      link: "tel:+923332369094",
+    },
   ],
   companyLinks = [
-    { text: "About Us", link: "/about" },
-    { text: "Product Portfolio", link: "/project" },
-    { text: "Contact Us", link: "/contact" },
+    { text: "Home", link: "/" },
+    { text: "About", link: "/about" },
+    { text: "Our Principals", link: "/principals" },
+    { text: "Clients", link: "/#clients" },
+    { text: "Contact", link: "/contact" },
   ],
 
   newsletterUrl = "MC_FORM_URL",
@@ -46,7 +63,7 @@ const Footer = ({
             <div className="site-footer__top-inner">
               <div className="row">
                 <div
-                  className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+                  className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
                   data-wow-delay="200ms"
                 >
                   <div className="footer-widget__column footer-widget__company">
@@ -63,7 +80,7 @@ const Footer = ({
                   </div>
                 </div>
                 <div
-                  className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+                  className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
                   data-wow-delay="400ms"
                 >
                   <div className="footer-widget__column footer-widget__newsletter">
@@ -71,20 +88,52 @@ const Footer = ({
                       <h3 className="footer-widget__title">Contact Us</h3>
                     </div>
                     <ul className="footer-widget__about-contact list-unstyled">
-                      {contactInfo.map((info, index) => (
-                        <li key={index}>
-                          <div className="icon">
-                            <span className={info.icon} />
-                          </div>
+                      <li>
+                        <div className="icon">
+                          <span className="icon-envolop email-icon" />
+                        </div>
+                        <div className="content">
                           <p>
-                            {info.link ? (
-                              <a href={info.link}>{info.text}</a>
-                            ) : (
-                              info.text
-                            )}
+                            <a href="mailto:project@pecoengg.com">
+                              project@pecoengg.com
+                            </a>
                           </p>
-                        </li>
-                      ))}
+                          <p>
+                            <a href="mailto:syedali@pecoengg.com">
+                              syedali@pecoengg.com
+                            </a>
+                          </p>
+                          <p>
+                            <a href="mailto:muzamil@pecoengg.com">
+                              muzamil@pecoengg.com
+                            </a>
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="icon">
+                          <span className="icon-location location-icon" />
+                        </div>
+                        <div className="content">
+                          <p>
+                            17-C, 1st Floor, Khayaban e Muslim, Cinepex Cinema
+                            Road, DHA Phase 06, Karachi
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="icon">
+                          <span className="icon-call phone-call" />
+                        </div>
+                        <div className="content">
+                          <p>
+                            <a href="tel:00922135250761">0092 21 35250761</a>
+                          </p>
+                          <p>
+                            <a href="tel:+923332369094">+92 333 2369094</a>
+                          </p>
+                        </div>
+                      </li>
                     </ul>
                     <div className="mc-form__response" />
                   </div>

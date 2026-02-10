@@ -5,7 +5,7 @@ const Brand = () => {
   return (
     <>
       {/*Brand One Start*/}
-      <section className="brand-one slider-sec">
+      <section className="brand-one slider-sec" id="clients">
         <div className="container">
           <h1 className="slider-heading">Our Valueable CLients</h1>
           <BrandSlider1 />

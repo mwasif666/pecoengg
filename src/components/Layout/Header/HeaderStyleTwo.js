@@ -58,6 +58,7 @@ const HeaderStyleTwo = ({ parentMenu, secondParentMenu, activeMenu }) => {
                                                 parentMenu={parentMenu}
                                                 secondParentMenu={secondParentMenu}
                                                 activeMenu={activeMenu}
+                                                showClients
                                             />
                                         </ul>
                                     </div>
@@ -108,6 +109,7 @@ const HeaderStyleTwo = ({ parentMenu, secondParentMenu, activeMenu }) => {
                                                     parentMenu={parentMenu}
                                                     secondParentMenu={secondParentMenu}
                                                     activeMenu={activeMenu}
+                                                    showClients
                                                 />
                                             </ul>
                                         </div>

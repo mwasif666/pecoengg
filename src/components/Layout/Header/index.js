@@ -109,6 +109,7 @@ const Header = (props) => {
                     parentMenu={parentMenu}
                     secondParentMenu={secondParentMenu}
                     activeMenu={activeMenu}
+                    showClients
                   />
                 </ul>
               </div>

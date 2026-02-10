@@ -52,6 +52,11 @@ const MobileMenu = ({ handleMobileMenu }) => {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/#clients" onClick={handleMobileMenu}>
+                    Clients
+                  </Link>
+                </li>
+                <li>
                   <Link to="/product-portfolio" onClick={handleMobileMenu}>
                     Product Portfolio
                   </Link>
@@ -68,19 +73,24 @@ const MobileMenu = ({ handleMobileMenu }) => {
           <ul className="mobile-nav__contact list-unstyled">
             <li>
               <i className="fa fa-envelope"></i>
-              <Link to="project@pecoengg.com">project@pecoengg.com</Link>
-            </li>
-            <li>
-              <i className="fa fa-envelope"></i>
-              <Link to="syedali@pecoengg.com">syedali@pecoengg.com</Link>
+              <div className="contact-group">
+                <Link to="mailto:project@pecoengg.com">
+                  project@pecoengg.com
+                </Link>
+                <Link to="mailto:syedali@pecoengg.com">
+                  syedali@pecoengg.com
+                </Link>
+                <Link to="mailto:muzamil@pecoengg.com">
+                  muzamil@pecoengg.com
+                </Link>
+              </div>
             </li>
             <li>
               <i className="fa fa-phone-alt"></i>
-              <Link to="tel:00922135250761">0092 21 35250761</Link>
-            </li>
-            <li>
-              <i className="fa fa-phone-alt"></i>
-              <Link to="tel:00922135250761">0092 21 35250761</Link>
+              <div className="contact-group">
+                <Link to="tel:00922135250761">0092 21 35250761</Link>
+                <Link to="tel:+923332369094">+92 333 2369094</Link>
+              </div>
             </li>
           </ul>
           {/* <div className="mobile-nav__top">

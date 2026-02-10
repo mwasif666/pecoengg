@@ -1279,7 +1279,8 @@ a.scroll-to-target.scroll-to-top {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 999;
+  z-index: 10000;
+  pointer-events: none;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   -webkit-transform-origin: left center;
@@ -1308,6 +1309,7 @@ a.scroll-to-target.scroll-to-top {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
   visibility: visible;
+  pointer-events: auto;
   -webkit-transition: visibility 500ms ease 0ms,
     -webkit-transform 500ms ease 0ms;
   transition: visibility 500ms ease 0ms, -webkit-transform 500ms ease 0ms;
@@ -1608,6 +1610,12 @@ a.scroll-to-target.scroll-to-top {
 
 .mobile-nav__contact li a:hover {
   color: var(--onpoint-base);
+}
+
+.mobile-nav__contact li .contact-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .mobile-nav__contact li > i {
@@ -4569,7 +4577,7 @@ select.selectmenu.wide {
 .footer-widget__about-contact li {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer-widget__about-contact li + li {
@@ -4583,6 +4591,8 @@ select.selectmenu.wide {
   justify-content: center;
   width: 40px;
   height: 40px;
+  flex: 0 0 40px;
+  margin-top: 2px;
   border-radius: 50%;
   background-color: rgba(var(--onpoint-base-rgb), 0.1);
   border: 1px solid rgba(var(--onpoint-white-rgb), 0.1);

@@ -24,7 +24,7 @@ const ContactMain = () => {
                     <a href="tel:00922135250761">0092 21 35250761</a>
                   </p>
                   <p>
-                    <a href="tel:00922135250761">0092 21 35250761</a>
+                    <a href="tel:+923332369094">+92 333 2369094</a>
                   </p>
                 </div>
               </li>
@@ -54,6 +54,11 @@ const ContactMain = () => {
                   <p>
                     <a href="mailto:syedali@pecoengg.com">
                       syedali@pecoengg.com
+                    </a>
+                  </p>
+                  <p>
+                    <a href="mailto:muzamil@pecoengg.com">
+                      muzamil@pecoengg.com
                     </a>
                   </p>
                 </div>

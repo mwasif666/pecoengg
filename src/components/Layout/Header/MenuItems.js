@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const MenuItems = (props) => {
-  const { parentMenu, activeMenu } = props;
+  const { parentMenu, activeMenu, showClients = false } = props;
 
   return (
     <React.Fragment>
@@ -16,8 +16,13 @@ const MenuItems = (props) => {
       </li>
 
       <li>
-        <Link to="/principals">OUR PRINCIPALS</Link>
+        <Link to="/principals">Our Principals</Link>
       </li>
+      {showClients && (
+        <li>
+          <Link to="/#clients">Clients</Link>
+        </li>
+      )}
       {/* <li>
         <Link to="/product-portfolio">Product Portfolio</Link>
       </li> */}
