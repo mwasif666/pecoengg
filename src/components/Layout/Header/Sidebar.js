@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/images/resources/logo-2.png'; // Import your logo image here
+const sidebarLogo =
+    "https://res.cloudinary.com/dndfzn6h3/image/upload/v1770786270/Peccoengglogo_fl4fby.png";
 
 const Sidebar = ({ isSidebar, handleSidebar }) => {
     return (
@@ -16,7 +17,7 @@ const Sidebar = ({ isSidebar, handleSidebar }) => {
                             <div className="content-inner">
                                 <div className="logo">
                                     <Link to="/">
-                                        <img src={logo} alt="Logo" />
+                                        <img src={sidebarLogo} alt="Logo" />
                                     </Link>
                                 </div>
                                 <div className="content-box">

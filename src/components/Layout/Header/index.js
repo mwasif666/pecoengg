@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MenuItems from "./MenuItems";
 import MobileMenu from "./MobileMenu";
@@ -16,9 +16,6 @@ const Header = (props) => {
   // ✅ NEW: scroll-up par white theme
   const [isLight, setIsLight] = useState(false);
 
-  const lastY = useRef(0);
-  const ticking = useRef(false);
-
   const [isPopup, setIsPopup] = useState(false);
   const [isSidebar, setIsSidebar] = useState(false);
 
@@ -26,51 +23,7 @@ const Header = (props) => {
     document.body.classList.toggle("mobile-menu-visible");
   };
 
-  useEffect(() => {
-    lastY.current = window.scrollY || 0;
-
-    const onScroll = () => {
-      if (ticking.current) return;
-      ticking.current = true;
-
-      requestAnimationFrame(() => {
-        const currentY = window.scrollY || 0;
-        const delta = currentY - lastY.current;
-
-        // after a little scroll -> scrolled
-        const scrolledNow = currentY > 20;
-        setIsScrolled(scrolledNow);
-
-        // ignore tiny jitter
-        if (Math.abs(delta) > 8) {
-          const goingDown = delta > 0;
-          const goingUp = delta < 0;
-
-          // ✅ Econetix behavior:
-          // scroll UP (and already scrolled) => white navbar
-          if (goingUp && currentY > 60) setIsLight(true);
-          if (goingDown) setIsLight(false);
-
-          // ✅ hide only when going down (same as before)
-          if (goingDown && currentY > 140) setIsHidden(true);
-          else if (goingUp) setIsHidden(false);
-          else if (currentY <= 140) setIsHidden(false);
-        }
-
-        // top reached => back to glass (overlay)
-        if (currentY <= 30) {
-          setIsLight(false);
-          setIsHidden(false);
-        }
-
-        lastY.current = currentY;
-        ticking.current = false;
-      });
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  // Sticky/scroll effects disabled: keep default header state.
 
   return (
     <>
@@ -88,7 +41,11 @@ const Header = (props) => {
               {/* LOGO */}
               <Link to="/" className="econ-logo" aria-label="Home">
                 <img
-                  src="https://res.cloudinary.com/dndfzn6h3/image/upload/v1766854166/Asset-9_iqnl4q.png"
+                  src={
+                    isScrolled
+                      ? "https://res.cloudinary.com/dndfzn6h3/image/upload/v1766854166/Asset-9_iqnl4q.png"
+                      : "https://res.cloudinary.com/dndfzn6h3/image/upload/v1770786270/Peccoengglogo_fl4fby.png"
+                  }
                   alt="Logo"
                 />
               </Link>

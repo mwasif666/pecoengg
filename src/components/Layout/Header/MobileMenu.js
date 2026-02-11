@@ -19,12 +19,9 @@ const MobileMenu = ({ handleMobileMenu }) => {
           <div className="logo-box">
             <Link to="/" aria-label="logo image">
               <img
-                src="https://res.cloudinary.com/dndfzn6h3/image/upload/v1766005609/cae169ed-9dd2-4c60-a7ac-38744ce5a48f.png"
+                src="https://res.cloudinary.com/dndfzn6h3/image/upload/v1770786270/Peccoengglogo_fl4fby.png"
                 width="150"
                 alt="Logo"
-                style={{
-                  filter: "brightness(0) invert(1)",
-                }}
               />
             </Link>
           </div>

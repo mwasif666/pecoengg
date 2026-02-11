@@ -3,7 +3,7 @@
 ================================ */
 
 .econ-overlay-header {
-  position: fixed;
+  position: absolute;
   inset: 0 0 auto 0;
   z-index: 9999;
 
@@ -21,7 +21,10 @@
 .econ-nav {
   pointer-events: auto;
   padding: 22px 0;
-  transition: background 260ms ease, padding 260ms ease, box-shadow 260ms ease,
+  transition:
+    background 260ms ease,
+    padding 260ms ease,
+    box-shadow 260ms ease,
     border-color 260ms ease;
 }
 
@@ -147,7 +150,9 @@
   border-radius: 999px;
   font-weight: 600;
   text-decoration: none;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .econ-menu-pill li a:hover {
@@ -163,7 +168,9 @@
   padding: 10px 18px 10px 10px;
   border-radius: 999px;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .econ-cta:hover {
