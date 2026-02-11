@@ -1,7 +1,19 @@
 import React from "react";
+import useContactForm, {
+  CONTACT_FORM_ACTION,
+  CONTACT_FORM_EMAIL_TO,
+} from "../../components/hooks/useContactForm";
 
 
 function FAQsection() {
+  const {
+    formRef,
+    handleSubmit,
+    isSubmitting,
+    toastMessage,
+    isToastVisible,
+  } = useContactForm();
+
   return (
     <section className="faq-one">
       <div className="container">
@@ -12,11 +24,23 @@ function FAQsection() {
               <h3 className="faq-one__from-title">Get in Touch with PECO</h3>
 
               <form
+                ref={formRef}
                 className="contact-form-validated faq-one__form"
-                action="assets/inc/sendemail.php"
+                action={CONTACT_FORM_ACTION}
                 method="post"
+                onSubmit={handleSubmit}
                 noValidate="novalidate"
               >
+                <input
+                  type="hidden"
+                  name="email_to"
+                  value={CONTACT_FORM_EMAIL_TO}
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="Website Enquiry"
+                />
                 <div className="row">
                   <div className="col-xl-6 col-lg-6">
                     <div className="faq-one__input-box">
@@ -58,7 +82,7 @@ function FAQsection() {
                   <div className="col-xl-12">
                     <div className="faq-one__btn-box">
                       <button type="submit" className="thm-btn faq-one__btn">
-                        Submit Now
+                        {isSubmitting ? "Submitting..." : "Submit Now"}
                         <span />
                       </button>
                     </div>
@@ -66,6 +90,15 @@ function FAQsection() {
                 </div>
               </form>
 
+              <div
+                className={`contact-toast ${
+                  isToastVisible ? "is-visible" : ""
+                }`}
+                role="status"
+                aria-live="polite"
+              >
+                {toastMessage}
+              </div>
               <div className="result" />
             </div>
           </div>

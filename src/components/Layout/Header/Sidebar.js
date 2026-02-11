@@ -1,9 +1,22 @@
-import React from 'react';
+import React from "react";
 import { Link } from 'react-router-dom';
+import useContactForm, {
+    CONTACT_FORM_ACTION,
+    CONTACT_FORM_EMAIL_TO,
+} from "../../hooks/useContactForm";
+
 const sidebarLogo =
     "https://res.cloudinary.com/dndfzn6h3/image/upload/v1770786270/Peccoengglogo_fl4fby.png";
 
 const Sidebar = ({ isSidebar, handleSidebar }) => {
+    const {
+        formRef,
+        handleSubmit,
+        isSubmitting,
+        toastMessage,
+        isToastVisible,
+    } = useContactForm();
+
     return (
         <div className={`xs-sidebar-group info-group info-sidebar ${isSidebar ? "isActive" : "close-sidebar"}`}>
             <div className="xs-overlay xs-bg-black" onClick={handleSidebar} />
@@ -26,7 +39,24 @@ const Sidebar = ({ isSidebar, handleSidebar }) => {
                                 </div>
                                 <div className="form-inner">
                                     <h4>Get a free quote</h4>
-                                    <form action="assets/inc/sendemail.php" className="contact-form-validated" noValidate="novalidate">
+                                    <form
+                                        ref={formRef}
+                                        action={CONTACT_FORM_ACTION}
+                                        className="contact-form-validated"
+                                        method="post"
+                                        onSubmit={handleSubmit}
+                                        noValidate="novalidate"
+                                    >
+                                        <input
+                                            type="hidden"
+                                            name="email_to"
+                                            value={CONTACT_FORM_EMAIL_TO}
+                                        />
+                                        <input
+                                            type="hidden"
+                                            name="subject"
+                                            value="Website Enquiry"
+                                        />
                                         <div className="form-group">
                                             <input type="text" name="name" placeholder="Name" required="" />
                                         </div>
@@ -37,9 +67,18 @@ const Sidebar = ({ isSidebar, handleSidebar }) => {
                                             <textarea name="message" placeholder="Message..."></textarea>
                                         </div>
                                         <div className="form-group message-btn">
-                                            <button type="submit" className="thm-btn form-inner__btn">Submit Now</button>
+                                            <button type="submit" className="thm-btn form-inner__btn" disabled={isSubmitting}>
+                                                {isSubmitting ? "Submitting..." : "Submit Now"}
+                                            </button>
                                         </div>
                                     </form>
+                                    <div
+                                        className={`contact-toast ${isToastVisible ? "is-visible" : ""}`}
+                                        role="status"
+                                        aria-live="polite"
+                                    >
+                                        {toastMessage}
+                                    </div>
                                     <div className="result" />
                                 </div>
                             </div>

@@ -1,7 +1,18 @@
-import React from 'react';
+import React from "react";
 import infoImg from '../../assets/images/team/team-details-info-img-1.jpg';
+import useContactForm, {
+  CONTACT_FORM_ACTION,
+  CONTACT_FORM_EMAIL_TO,
+} from "../../components/hooks/useContactForm";
 
 const TeamDetailsMain = () => {
+  const {
+    formRef,
+    handleSubmit,
+    isSubmitting,
+    toastMessage,
+    isToastVisible,
+  } = useContactForm();
   // Static data
   const teamMember = {
     name: "Trevis Head",
@@ -148,7 +159,24 @@ const TeamDetailsMain = () => {
             <p className="team-details__contact-text">
               Your email address will not be published. Required fields are marked *
             </p>
-            <form action="assets/inc/sendemail.php" className="team-details__form contact-form-validated" noValidate>
+            <form
+              ref={formRef}
+              action={CONTACT_FORM_ACTION}
+              className="team-details__form contact-form-validated"
+              method="post"
+              onSubmit={handleSubmit}
+              noValidate
+            >
+              <input
+                type="hidden"
+                name="email_to"
+                value={CONTACT_FORM_EMAIL_TO}
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="Website Enquiry"
+              />
               <div className="row">
                 <div className="col-xl-6 col-lg-6">
                   <div className="team-details__input-box">
@@ -172,13 +200,25 @@ const TeamDetailsMain = () => {
                     <textarea name="message" placeholder="Write Message*" />
                   </div>
                   <div className="contact-two__btn-box">
-                    <button type="submit" className="thm-btn team-details__btn">
-                      Send Your Message<span />
+                    <button
+                      type="submit"
+                      className="thm-btn team-details__btn"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? "Submitting..." : "Send Your Message"}
+                      <span />
                     </button>
                   </div>
                 </div>
               </div>
             </form>
+            <div
+              className={`contact-toast ${isToastVisible ? "is-visible" : ""}`}
+              role="status"
+              aria-live="polite"
+            >
+              {toastMessage}
+            </div>
             <div className="result" />
           </div>
         </div>

@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import useContactForm, {
+  CONTACT_FORM_ACTION,
+  CONTACT_FORM_EMAIL_TO,
+} from "../hooks/useContactForm";
 
 const faqData = [
     {
@@ -20,6 +24,13 @@ const faqData = [
 
 function FAQsection() {
     const [isActive, setIsActive] = useState({ status: false, key: 1 });
+    const {
+        formRef,
+        handleSubmit,
+        isSubmitting,
+        toastMessage,
+        isToastVisible,
+    } = useContactForm();
 
     const handleToggle = (key) => {
         if (isActive.key === key) {
@@ -64,7 +75,24 @@ function FAQsection() {
                     <div className="col-xl-6 col-lg-6">
                         <div className="faq-one__right">
                             <h3 className="faq-one__from-title">Our One-Stop Car Repair Shop</h3>
-                            <form className="contact-form-validated faq-one__form" action="assets/inc/sendemail.php" method="post" noValidate="novalidate">
+                            <form
+                                ref={formRef}
+                                className="contact-form-validated faq-one__form"
+                                action={CONTACT_FORM_ACTION}
+                                method="post"
+                                onSubmit={handleSubmit}
+                                noValidate="novalidate"
+                            >
+                                <input
+                                    type="hidden"
+                                    name="email_to"
+                                    value={CONTACT_FORM_EMAIL_TO}
+                                />
+                                <input
+                                    type="hidden"
+                                    name="subject"
+                                    value="Website Enquiry"
+                                />
                                 <div className="row">
                                     <div className="col-xl-6 col-lg-6">
                                         <div className="faq-one__input-box">
@@ -84,7 +112,11 @@ function FAQsection() {
                                     <div className="col-xl-6 col-lg-6">
                                         <div className="faq-one__input-box">
                                             <div className="select-box">
-                                                <select defaultValue="Choose an Option" className="selectmenu wide">
+                                                <select
+                                                    name="service"
+                                                    defaultValue="Choose an Option"
+                                                    className="selectmenu wide"
+                                                >
                                                     <option>Choose an Option</option>
                                                     <option>Type Of Service 01</option>
                                                     <option>Type Of Service 02</option>
@@ -103,11 +135,21 @@ function FAQsection() {
                                     </div>
                                     <div className="col-xl-12">
                                         <div className="faq-one__btn-box">
-                                            <button type="submit" className="thm-btn faq-one__btn">Submit Now<span /></button>
+                                            <button type="submit" className="thm-btn faq-one__btn">
+                                                {isSubmitting ? "Submitting..." : "Submit Now"}
+                                                <span />
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
+                            <div
+                                className={`contact-toast ${isToastVisible ? "is-visible" : ""}`}
+                                role="status"
+                                aria-live="polite"
+                            >
+                                {toastMessage}
+                            </div>
                             <div className="result" />
                         </div>
                     </div>

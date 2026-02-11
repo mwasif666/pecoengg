@@ -1,6 +1,18 @@
 import React from "react";
+import useContactForm, {
+  CONTACT_FORM_ACTION,
+  CONTACT_FORM_EMAIL_TO,
+} from "../../components/hooks/useContactForm";
 
 const ContactMain = () => {
+  const {
+    formRef,
+    handleSubmit,
+    isSubmitting,
+    toastMessage,
+    isToastVisible,
+  } = useContactForm();
+
   return (
     <React.Fragment>
       {/*Contact One Start*/}
@@ -81,11 +93,18 @@ const ContactMain = () => {
                   <h2 className="section-title__title">Get Touch Here</h2>
                 </div>
                 <form
+                  ref={formRef}
                   className="contact-form-validated contact-two__form"
-                  action="assets/inc/sendemail.php"
                   method="post"
+                  action={CONTACT_FORM_ACTION}
+                  onSubmit={handleSubmit}
                   noValidate="novalidate"
                 >
+                  <input
+                    type="hidden"
+                    name="email_to"
+                    value={CONTACT_FORM_EMAIL_TO}
+                  />
                   <div className="row">
                     <div className="col-xl-6 col-lg-6">
                       <div className="contact-two__input-box">
@@ -102,7 +121,7 @@ const ContactMain = () => {
                         <input
                           type="email"
                           name="email"
-                          placeholder="E-mail"
+                          placeholder="Email"
                           required=""
                         />
                       </div>
@@ -111,7 +130,7 @@ const ContactMain = () => {
                       <div className="contact-two__input-box">
                         <input
                           type="text"
-                          name="text"
+                          name="subject"
                           placeholder="Subject"
                           required=""
                         />
@@ -131,14 +150,24 @@ const ContactMain = () => {
                         <button
                           type="submit"
                           className="thm-btn contact-two__btn"
+                          disabled={isSubmitting}
                         >
-                          Submit Now
+                          {isSubmitting ? "Submitting..." : "Submit Now"}
                           <span />
                         </button>
                       </div>
                     </div>
                   </div>
                 </form>
+                <div
+                  className={`contact-toast ${
+                    isToastVisible ? "is-visible" : ""
+                  }`}
+                  role="status"
+                  aria-live="polite"
+                >
+                  {toastMessage}
+                </div>
                 <div className="result" />
               </div>
             </div>
