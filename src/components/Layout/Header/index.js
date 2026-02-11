@@ -10,11 +10,9 @@ import "./header-glass.css";
 const Header = (props) => {
   const { parentMenu, secondParentMenu, activeMenu } = props;
 
-  const [isHidden, setIsHidden] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  // ✅ NEW: scroll-up par white theme
-  const [isLight, setIsLight] = useState(false);
+  const isHidden = false;
+  const isScrolled = false;
+  const isLight = false;
 
   const [isPopup, setIsPopup] = useState(false);
   const [isSidebar, setIsSidebar] = useState(false);
